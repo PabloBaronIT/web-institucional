@@ -8,7 +8,7 @@
 
     <div class="top-nav-a-container">
       <div class="dropdown">
-        <button class="dropbtn">Ciudad</button>
+        <button class="dropbtn">La ciudad</button>
         <div class="dropdown-content">
           <router-link :to="`/gobierno`"> Gobierno </router-link>
           <a href="#">Servicio</a>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Gobierno</button>
+        <button class="dropbtn">Nuestro gobierno</button>
         <div class="dropdown-content">
           <a href="#">Servicio</a>
           <a href="#">Servicio</a>
