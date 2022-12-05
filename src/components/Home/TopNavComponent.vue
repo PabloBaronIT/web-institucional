@@ -31,7 +31,7 @@
           <a href="#">Servicio</a>
         </div>
       </div>
-      <router-link class="" to="/munienlinea">Muni en linea</router-link>
+      <router-link class="btn-mel" to="/munienlinea">Muni en linea</router-link>
     </div>
   </nav>
 </template>
@@ -117,7 +117,6 @@ export default {
 }
 
 .top-nav-a-container a:hover {
-  box-shadow: inset 100px 0 0 0 var(--blue);
   color: white;
 }
 
@@ -142,7 +141,11 @@ ul li {
   padding: 10px;
   background-color: var(--red);
   border-radius: 10px;
-  color: #fff !important;
+}
+
+.btn-mel:hover {
+  box-shadow: 10px 10px 10px var(--yellow);
+  color: var(--yellow) !important;
 }
 
 /* .top-nav-container:before {
