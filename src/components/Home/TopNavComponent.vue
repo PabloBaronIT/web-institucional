@@ -31,7 +31,7 @@
           <a href="#">Servicio</a>
         </div>
       </div>
-      <router-link class="btn-mel" to="/munienlinea">Muni en linea</router-link>
+      <a class="btn-mel" href="http://localhost:8080/#/">Muni en linea</a>
     </div>
   </nav>
 </template>
@@ -141,6 +141,7 @@ ul li {
   padding: 10px;
   background-color: var(--red);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .btn-mel:hover {
