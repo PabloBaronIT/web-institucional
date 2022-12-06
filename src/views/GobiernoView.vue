@@ -1,6 +1,4 @@
 <template>
-  <topNavComponent />
-
   <div class="gob-container">
     <navOrganigramaComponent />
 
@@ -9,14 +7,12 @@
 </template>
 
 <script>
-import topNavComponent from "@/components/Home/TopNavComponent.vue";
 import navOrganigramaComponent from "@/components/Gobierno/navOrganigramaComponent.vue";
 import infoGobiernoComponent from "@/components/Gobierno/infoGobiernoComponent.vue";
 
 export default {
   name: "GobiernoView",
   components: {
-    topNavComponent,
     infoGobiernoComponent,
     navOrganigramaComponent,
   },

@@ -11,7 +11,8 @@
         <button class="dropbtn">La ciudad</button>
         <div class="dropdown-content">
           <router-link :to="`/gobierno`"> Gobierno </router-link>
-          <a href="#">Servicio</a>
+          <router-link :to="`/ciudad`"> La ciudad </router-link>
+
           <a href="#">Servicio</a>
         </div>
       </div>

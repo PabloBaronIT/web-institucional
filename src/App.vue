@@ -1,6 +1,17 @@
 <template>
+  <topNavComponent />
   <router-view />
 </template>
+
+<script>
+import topNavComponent from "@/components/Home/TopNavComponent.vue";
+
+export default {
+  components: {
+    topNavComponent,
+  },
+};
+</script>
 
 <style>
 #app {

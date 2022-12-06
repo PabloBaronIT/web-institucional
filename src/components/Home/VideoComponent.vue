@@ -1,7 +1,7 @@
 <template>
   <div class="video-container">
     <div class="video-text">
-      <h1>Ciudad de Campo Bravo, tu ciudad</h1>
+      <h1 class="video-h1">Ciudad de Campo Bravo, tu ciudad</h1>
     </div>
 
     <video muted autoplay loop>
@@ -16,7 +16,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .video-container {
   min-height: 70vh;
   position: relative;
@@ -51,7 +51,7 @@ video {
   padding: 50px;
 }
 
-h1 {
+.video-h1 {
   text-align: left;
   height: 200px;
   width: 200px;
