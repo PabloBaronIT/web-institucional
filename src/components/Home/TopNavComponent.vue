@@ -64,7 +64,7 @@ export default {
   display: inline-block;
   z-index: 3;
   background: none;
-  border-right: 1px solid var(--yellow);
+  border-right: 1px solid var(--red);
 }
 
 /* Dropdown Content (Hidden by Default) */

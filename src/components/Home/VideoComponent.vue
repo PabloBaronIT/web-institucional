@@ -1,7 +1,7 @@
 <template>
   <div class="video-container">
     <div class="video-text">
-      <h1 class="video-h1">Ciudad de Campo Bravo, tu ciudad</h1>
+      <h1 class="video-h1">Ciudad de <span>Campo Bravo</span>, tu ciudad</h1>
     </div>
 
     <video muted autoplay loop>
@@ -55,5 +55,9 @@ video {
   text-align: left;
   height: 200px;
   width: 200px;
+}
+
+span {
+  color: var(--blue);
 }
 </style>
