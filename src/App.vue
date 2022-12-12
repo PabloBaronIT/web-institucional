@@ -18,10 +18,10 @@ export default {
 
 <style>
 #app {
-  --green: #1746a2;
-  --blue: #5f9df7;
+  --green: #d1e9ea;
+  --blue: #415f77;
   --yellow: #fff7e9;
-  --red: #fa7d09;
+  --red: #e14d2a;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

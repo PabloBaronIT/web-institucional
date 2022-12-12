@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .container {
-  width: 30px;
+  width: 100%;
 
   display: flex;
   justify-content: space-around;
@@ -71,8 +71,8 @@ export default {
 
 .dato {
   padding: 10px;
-  border: 1px solid red;
-  width: 120px;
+
+  width: 110px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);

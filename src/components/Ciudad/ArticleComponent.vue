@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="article-container">
     <div class="fade-in full-width">
-      <h3>El corazon de argentina</h3>
+      <h3 class="article-h3">El corazon de argentina</h3>
       <h1>Tierra de origen jesuita y de raices profundas</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatem
@@ -14,9 +14,7 @@
         esse aut quidem non, a fuga fugiat cupiditate obcaecati soluta officia.
       </p>
     </div>
-    <div class="fade-in full-width">
-      <DatosComponent />
-    </div>
+    <div class="fade-in full-width"></div>
     <div class="half-width fade-in"></div>
     <div class="half-width fade-in"></div>
   </div>
@@ -24,13 +22,10 @@
 
 <script>
 import { onMounted, onUnmounted } from "vue";
-import DatosComponent from "@/components/Ciudad/DatosComponent.vue";
 
 export default {
   name: "ArticleComponent",
-  components: {
-    DatosComponent,
-  },
+
   setup() {
     var fadeInElements = [];
 
@@ -65,15 +60,17 @@ export default {
 };
 </script>
 
-<style scoped>
-h3 {
+<style>
+.article-h3 {
   color: var(--red);
 }
 
-.container {
+.article-container {
   width: 90%;
   min-width: 450px;
   margin: 20px auto;
+
+  height: 250px;
 }
 
 .fade-in {

@@ -10,26 +10,25 @@
       <div class="dropdown">
         <button class="dropbtn">La ciudad</button>
         <div class="dropdown-content">
-          <router-link :to="`/gobierno`"> Gobierno </router-link>
-          <router-link :to="`/ciudad`"> La ciudad </router-link>
-
-          <a href="#">Servicio</a>
+          <router-link :to="`/ciudad`"> Sobre la ciudad </router-link>
+          <router-link :to="`/ciudad`">Historia </router-link>
+          <router-link :to="`/ciudad`"> Georeferecial </router-link>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn">Nuestro gobierno</button>
         <div class="dropdown-content">
-          <a href="#">Servicio</a>
-          <a href="#">Servicio</a>
-          <a href="#">Servicio</a>
+          <router-link :to="`/gobierno`"> Quienes somos </router-link>
+          <router-link :to="`/gobierno`"> Organigrama </router-link>
+          <router-link :to="`/gobierno`"> La gestión </router-link>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn">Intereses</button>
         <div class="dropdown-content">
-          <a href="#">Servicio</a>
-          <a href="#">Servicio</a>
-          <a href="#">Servicio</a>
+          <a href="#">Eventos</a>
+          <a href="#">Obras</a>
+          <a href="#">Telefonos utiles</a>
         </div>
       </div>
       <a class="btn-mel" href="http://localhost:8080/#/">Muni en linea</a>
@@ -111,7 +110,6 @@ export default {
 }
 
 .top-nav-a-container a {
-  margin: 20px;
   text-decoration: none;
   color: #000;
   transition: color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -139,6 +137,7 @@ ul li {
 }
 
 .btn-mel {
+  margin: 0 10px;
   padding: 10px;
   background-color: var(--red);
   border-radius: 10px;
