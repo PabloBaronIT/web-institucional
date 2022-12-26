@@ -1,7 +1,7 @@
 <template>
   <videoComponent />
   <div class="main">
-    <cardComponent bckg="/messi.webp" />
+    <cardComponent bckg="" />
     <btnServiciosComponent />
   </div>
 </template>

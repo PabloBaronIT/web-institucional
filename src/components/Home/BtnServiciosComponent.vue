@@ -87,11 +87,12 @@ main {
 }
 
 button {
-  width: 200px;
-
-  margin: 20px;
+  width: 40%;
+  height: 40%;
+  margin: 10px;
   padding: 20px;
   height: auto;
+  border: 1px solid red;
 }
 
 .btn-mas {

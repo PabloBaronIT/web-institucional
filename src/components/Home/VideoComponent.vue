@@ -18,7 +18,7 @@ export default {
 
 <style>
 .video-container {
-  min-height: 70vh;
+  min-height: 40vh;
   position: relative;
   display: flex;
   justify-content: center;

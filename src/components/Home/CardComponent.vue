@@ -25,8 +25,8 @@ export default {
 
 <style scoped>
 .card-container {
-  width: 35%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
   margin: 10px;
 }
 
