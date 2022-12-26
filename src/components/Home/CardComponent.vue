@@ -1,16 +1,13 @@
 <template>
   <div class="card-container">
-    <a href="">
-      <img :src="imgCard()" :alt="imgCard()" />
-    </a>
+    <img src="@/assets/logo-eco.svg" alt="" />
+    <h1>Oficina Virtual</h1>
+    <p>Compromiso ecologico a traves de la digitalizacion</p>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    bckg: String,
-  },
   methods: {
     imgCard() {
       if (this.bckg != "") {
@@ -25,16 +22,15 @@ export default {
 
 <style scoped>
 .card-container {
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
   margin: 10px;
 }
 
 img {
+  fill: red;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid var(--blue);
 }
 </style>

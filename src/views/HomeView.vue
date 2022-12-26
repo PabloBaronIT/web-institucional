@@ -1,7 +1,7 @@
 <template>
   <videoComponent />
   <div class="main">
-    <cardComponent bckg="" />
+    <cardComponent />
     <btnServiciosComponent />
   </div>
 </template>
