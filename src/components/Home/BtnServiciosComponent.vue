@@ -46,7 +46,7 @@
         </svg>
         <p>Servicio</p>
       </button>
-      <button class="button-36" role="button">
+      <button class="btn-mas" role="button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -94,6 +94,8 @@ button {
   height: auto;
 }
 
+.btn-mas {
+}
 /* CSS */
 </style>
 

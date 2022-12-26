@@ -1,11 +1,8 @@
 <template>
+  <videoComponent />
   <div class="main">
-    <videoComponent />
+    <cardComponent bckg="/messi.webp" />
     <btnServiciosComponent />
-    <div class="cards-container">
-      <cardComponent bckg="/messi.webp" />
-      <cardComponent bckg="/messi.webp" />
-    </div>
   </div>
 </template>
 
@@ -30,5 +27,9 @@ export default {
 .cards-container {
   display: flex;
   justify-content: center;
+}
+
+.main {
+  display: flex;
 }
 </style>
