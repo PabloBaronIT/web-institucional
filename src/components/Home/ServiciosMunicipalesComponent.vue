@@ -1,63 +1,12 @@
 <template>
   <article>
     <section>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
-        <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
-        </div>
-      </div>
-      <div class="lista-servicios">
+      <div
+        @click="Colapse()"
+        v-for="articulo in 8"
+        :key="articulo.id"
+        class="lista-servicios"
+      >
         <img class="svg" src="@/assets/arbol.svg" alt="" />
         <p>Denuncia de suciedad</p>
         <img class="svg" src="@/assets/flecha.svg" alt="" />
@@ -78,6 +27,11 @@ export default {
       //     {name:"Poda de"}
       //   ]
     };
+  },
+  methods: {
+    Colapse() {
+      this.colapse = !this.colapse;
+    },
   },
 };
 </script>
