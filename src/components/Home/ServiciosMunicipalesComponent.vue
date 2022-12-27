@@ -3,7 +3,7 @@
     <section>
       <div
         @click="Colapse()"
-        v-for="articulo in 8"
+        v-for="articulo in 12"
         :key="articulo.id"
         class="lista-servicios"
       >

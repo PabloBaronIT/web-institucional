@@ -18,11 +18,12 @@ export default {
 
 <style>
 .video-container {
-  min-height: 40vh;
+  min-height: 45vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 5px 5px rgba(94, 94, 94, 0.568);
 }
 
 video {
