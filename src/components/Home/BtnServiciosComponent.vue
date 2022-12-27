@@ -48,7 +48,8 @@
       </button>
 
       <router-link class="btn-mas" :to="`/ciudad`">
-        <h3>Tramites administrativos</h3>
+        Tramites administrativos
+        <img class="svg" src="@/assets/flecha.svg" alt="" />
       </router-link>
     </div>
   </main>
@@ -67,6 +68,7 @@ main {
 }
 /* CSS */
 .servicios-container {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +79,7 @@ main {
 button {
   width: 30%;
   height: 40%;
-  margin: 10px;
+  margin: 0 10px;
   padding: 20px;
   height: auto;
 }
@@ -86,13 +88,18 @@ button {
   padding: 10px;
   background: var(--red);
   border-radius: 30px;
-  height: 15%;
+  height: auto;
   color: var(--blue);
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.btn-mas img {
+  margin: 0 10px;
+}
+
 /* CSS */
 </style>
 

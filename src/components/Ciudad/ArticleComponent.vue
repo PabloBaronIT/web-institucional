@@ -69,7 +69,6 @@ export default {
   width: 90%;
   min-width: 450px;
   margin: 20px auto;
-
   height: 250px;
 }
 

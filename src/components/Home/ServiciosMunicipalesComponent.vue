@@ -49,6 +49,22 @@
           <p>hola hola</p>
         </div>
       </div>
+      <div class="lista-servicios">
+        <img class="svg" src="@/assets/arbol.svg" alt="" />
+        <p>Denuncia de suciedad</p>
+        <img class="svg" src="@/assets/flecha.svg" alt="" />
+        <div v-if="colapse" class="lista-expandida">
+          <p>hola hola</p>
+        </div>
+      </div>
+      <div class="lista-servicios">
+        <img class="svg" src="@/assets/arbol.svg" alt="" />
+        <p>Denuncia de suciedad</p>
+        <img class="svg" src="@/assets/flecha.svg" alt="" />
+        <div v-if="colapse" class="lista-expandida">
+          <p>hola hola</p>
+        </div>
+      </div>
     </section>
   </article>
 </template>
@@ -66,8 +82,15 @@ export default {
 };
 </script>
 
+<style>
+.svg {
+  max-width: 1.2em;
+}
+</style>
+
 <style scoped>
 article {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -80,6 +103,7 @@ section {
 }
 
 .lista-servicios {
+  padding: 5px;
   max-width: 35%;
   height: 50px;
   margin: 3px;
@@ -93,9 +117,5 @@ section {
 
 .lista-servicios p {
   margin: 0 10px;
-}
-
-.svg {
-  max-width: 30px;
 }
 </style>
