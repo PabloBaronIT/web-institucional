@@ -1,10 +1,6 @@
 <template>
   <nav class="top-nav-container">
-    <img
-      src="https://morteros.gob.ar/sites/default/files/logo_municipio_0.png"
-      alt=""
-      style="width: 20%"
-    />
+    <img src="@/assets/campoBravo.png" alt="" class="logo-muni" />
 
     <div class="top-nav-a-container">
       <div class="dropdown">
@@ -55,6 +51,10 @@ export default {
   font-size: 16px;
   border: none;
   font-weight: bold;
+}
+
+.logo-muni {
+  width: 180px;
 }
 
 /* The container <div> - needed to position the dropdown content */

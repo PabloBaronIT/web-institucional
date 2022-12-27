@@ -4,6 +4,7 @@
     <cardComponent />
     <btnServiciosComponent />
   </div>
+  <ServiciosMunicipales />
 </template>
 
 <script>
@@ -12,6 +13,7 @@
 import videoComponent from "@/components/Home/VideoComponent";
 import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 import cardComponent from "@/components/Home/CardComponent.vue";
+import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
 
 export default {
   name: "HomeView",
@@ -19,6 +21,7 @@ export default {
     videoComponent,
     btnServiciosComponent,
     cardComponent,
+    ServiciosMunicipales,
   },
 };
 </script>
