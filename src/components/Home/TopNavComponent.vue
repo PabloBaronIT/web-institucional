@@ -33,6 +33,21 @@
       </div>
     </div>
   </nav>
+  <div class="colores">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+  </div>
 </template>
 <script>
 import climaService from "@/service/climaService";
@@ -113,6 +128,32 @@ export default {
 }
 </style>
 <style scoped>
+.colores {
+  height: 8px;
+  width: 100%;
+  display: flex;
+}
+.blue {
+  height: 10px;
+  width: 20%;
+  background: var(--blue);
+}
+.red {
+  height: 10px;
+  width: 20%;
+  background: var(--red);
+}
+.yellow {
+  height: 10px;
+  width: 20%;
+  background: var(--yellow);
+}
+.green {
+  height: 10px;
+  width: 20%;
+  background: var(--green);
+}
+
 .top-nav-container {
   width: 100%;
   height: 80px;
