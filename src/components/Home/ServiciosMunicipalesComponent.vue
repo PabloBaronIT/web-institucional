@@ -3,15 +3,28 @@
     <section>
       <div
         @click="Colapse()"
-        v-for="articulo in 12"
-        :key="articulo.id"
+        v-for="servicio in this.servicios"
+        :key="servicio.id"
+        :id="servicio.id"
         class="lista-servicios"
       >
-        <img class="svg" src="@/assets/arbol.svg" alt="" />
-        <p>Denuncia de suciedad</p>
-        <img class="svg" src="@/assets/flecha.svg" alt="" />
+        <div class="descripcion">
+          <img class="svg" src="@/assets/arbol.svg" alt="" />
+          <p>{{ servicio.name }}</p>
+          <img class="svg" src="@/assets/flecha.svg" alt="" />
+        </div>
         <div v-if="colapse" class="lista-expandida">
-          <p>hola hola</p>
+          <ul>
+            <li>
+              {{ servicio.lista[0] }}
+            </li>
+            <li>
+              {{ servicio.lista[1] }}
+            </li>
+            <li>
+              {{ servicio.lista[2] }}
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -23,13 +36,58 @@ export default {
   data() {
     return {
       colapse: false,
-      //   servicios:[
-      //     {name:"Poda de"}
-      //   ]
+      colapseId: 0,
+      servicios: [
+        {
+          id: 1,
+          name: "Alumbrado",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 2,
+          name: "Alumbrado",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 3,
+          name: "Alumbrado",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 4,
+          name: "Alumbrado",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 4,
+          name: "Alumbrado",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+      ],
     };
   },
   methods: {
-    Colapse() {
+    Colapse(id) {
       this.colapse = !this.colapse;
     },
   },
@@ -56,15 +114,20 @@ section {
   flex-flow: row wrap;
 }
 
+.descripcion {
+  display: flex;
+}
+
 .lista-servicios {
   padding: 5px;
   max-width: 35%;
-  height: 50px;
+  height: auto;
   margin: 3px;
   background: var(--blue);
   color: #fff;
   border-radius: 5px;
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
