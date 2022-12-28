@@ -2,18 +2,22 @@
   <article>
     <section>
       <div
-        @click="Colapse()"
         v-for="servicio in this.servicios"
         :key="servicio.id"
         :id="servicio.id"
         class="lista-servicios"
+        @click="Colapse(servicio.id)"
+        @mouseover="this.colapseId = servicio.id"
       >
         <div class="descripcion">
           <img class="svg" src="@/assets/arbol.svg" alt="" />
           <p>{{ servicio.name }}</p>
           <img class="svg" src="@/assets/flecha.svg" alt="" />
         </div>
-        <div v-if="colapse" class="lista-expandida">
+        <div
+          v-if="colapse == true && colapseId === servicio.id"
+          class="lista-expandida"
+        >
           <ul>
             <li>
               {{ servicio.lista[0] }}
@@ -49,7 +53,7 @@ export default {
         },
         {
           id: 2,
-          name: "Alumbrado",
+          name: "Arbolado",
           lista: [
             "Reparacion de luminaria",
             "Limpieza de equipos",
@@ -58,7 +62,7 @@ export default {
         },
         {
           id: 3,
-          name: "Alumbrado",
+          name: "Calles y Veredas",
           lista: [
             "Reparacion de luminaria",
             "Limpieza de equipos",
@@ -67,7 +71,7 @@ export default {
         },
         {
           id: 4,
-          name: "Alumbrado",
+          name: "Educación",
           lista: [
             "Reparacion de luminaria",
             "Limpieza de equipos",
@@ -75,8 +79,53 @@ export default {
           ],
         },
         {
-          id: 4,
-          name: "Alumbrado",
+          id: 5,
+          name: "Fiscalización Actividades Comerciales",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 6,
+          name: "Limpieza y Recolección",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 7,
+          name: "Parques y plazas",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 8,
+          name: "Fiscalización Actividades Comerciales",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 9,
+          name: "Transito y transporte",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 10,
+          name: "Reciclado",
           lista: [
             "Reparacion de luminaria",
             "Limpieza de equipos",
@@ -88,6 +137,7 @@ export default {
   },
   methods: {
     Colapse(id) {
+      this.colapseId = id;
       this.colapse = !this.colapse;
     },
   },
@@ -120,9 +170,10 @@ section {
 
 .lista-servicios {
   padding: 5px;
-  max-width: 35%;
+  width: 350px;
+  min-height: 45px;
   height: auto;
-  margin: 3px;
+  margin: 2px;
   background: var(--blue);
   color: #fff;
   border-radius: 5px;
@@ -130,6 +181,16 @@ section {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.lista-servicios:focus {
+  background: var(--red);
+}
+
+.lista-servicios:hover {
+  background: var(--red);
 }
 
 .lista-servicios p {

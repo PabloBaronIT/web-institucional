@@ -4,7 +4,12 @@
     <h4>Puntos interesantes para visitar</h4>
   </div>
   <div class="map-container">
-    <input type="button" value="Ver mas" />
+    <a
+      class="ver-mas"
+      target="_blank"
+      href="https://www.google.com.ar/maps/place/Sacanta,+C%C3%B3rdoba/@-31.6667095,-63.0419205,15z/data=!4m5!3m4!1s0x95ccb073fc8d85a3:0x5c117ea2f28a7d71!8m2!3d-31.6639934!4d-63.0472807"
+      >Ver ubicación</a
+    >
   </div>
 </template>
 
@@ -37,7 +42,9 @@ h2 {
   align-items: center;
 }
 
-.map-container input {
+.ver-mas {
+  color: var(--text-color);
+  text-decoration: none;
   background: var(--red);
   border: none;
   padding: 10px;
