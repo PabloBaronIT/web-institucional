@@ -17,17 +17,19 @@
 export default {};
 </script>
 
-<style scoped>
-h2 {
-  color: var(--red);
-}
-
+<style>
 .titulo {
   margin: 6vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+</style>
+
+<style scoped>
+h2 {
+  color: var(--red);
 }
 
 .map-container {

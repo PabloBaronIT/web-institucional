@@ -1,7 +1,7 @@
 <template>
   <footer>
     <img
-      src="https://morteros.gob.ar/sites/default/files/logo_municipio_0.png"
+      src="@/assets/campoBravo.png"
       alt=""
       style="width: 20%; height: 50px"
     />
@@ -30,5 +30,9 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+}
+
+footer img {
+  object-fit: cover;
 }
 </style>

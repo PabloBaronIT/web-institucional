@@ -6,6 +6,10 @@
   </div>
   <ServiciosMunicipales />
   <MapComponent />
+  <div class="programas">
+    <Programa />
+    <Programa />
+  </div>
 </template>
 
 <script>
@@ -16,6 +20,7 @@ import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 import cardComponent from "@/components/Home/CardComponent.vue";
 import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
 import MapComponent from "@/components/Home/MapComponent.vue";
+import Programa from "@/components/Home/ProgramaComponent.vue";
 
 export default {
   name: "HomeView",
@@ -25,6 +30,7 @@ export default {
     cardComponent,
     ServiciosMunicipales,
     MapComponent,
+    Programa,
   },
 };
 </script>
@@ -38,5 +44,11 @@ export default {
 .main {
   display: flex;
   align-items: center;
+}
+
+.programas {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 </style>

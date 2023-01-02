@@ -5,9 +5,10 @@ import router from "./router";
 import "bootstrap";
 import { plugin, defaultConfig } from "@formkit/vue";
 
-// Import Bootstrap and BootstrapVue CSS files (order is important)
+//Import Bootstrap and BootstrapVue CSS files (order is important)
+
 import "bootstrap/dist/css/bootstrap.css";
-import "@formkit/themes/genesis";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 createApp(App).use(plugin, defaultConfig).use(router).mount("#app");

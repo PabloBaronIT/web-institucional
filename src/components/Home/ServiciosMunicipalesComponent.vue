@@ -1,5 +1,9 @@
 <template>
   <article>
+    <div class="title">
+      <h2>Servicios municipales</h2>
+      <h4>Puedes solicitar aqui el servicio que necesites</h4>
+    </div>
     <section>
       <div
         v-for="servicio in this.servicios"
@@ -10,9 +14,9 @@
         @mouseover="this.colapseId = servicio.id"
       >
         <div class="descripcion">
-          <img class="svg" src="@/assets/arbol.svg" alt="" />
+          <img class="icono" src="@/assets/arbol.svg" alt="" />
           <p>{{ servicio.name }}</p>
-          <img class="svg" src="@/assets/flecha.svg" alt="" />
+          <img class="svg flecha" src="@/assets/flecha.svg" alt="" />
         </div>
         <div
           v-if="colapse == true && colapseId === servicio.id"
@@ -132,6 +136,24 @@ export default {
             "Mayor iluminacion",
           ],
         },
+        {
+          id: 11,
+          name: "Puviales",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
+        {
+          id: 12,
+          name: "Sugerencias",
+          lista: [
+            "Reparacion de luminaria",
+            "Limpieza de equipos",
+            "Mayor iluminacion",
+          ],
+        },
       ],
     };
   },
@@ -146,31 +168,47 @@ export default {
 
 <style>
 .svg {
-  max-width: 1.2em;
+  width: 1.2em;
 }
 </style>
 
 <style scoped>
+.title {
+  display: flex;
+  align-items: baseline;
+  width: 80%;
+  color: var(--red);
+  justify-content: space-between;
+}
+
 article {
   margin-top: 20px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 section {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
+.icono {
+  max-width: 40px;
+}
+
 .descripcion {
   display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .lista-servicios {
   padding: 5px;
-  width: 350px;
+  width: 370px;
   min-height: 45px;
   height: auto;
   margin: 2px;
