@@ -10,6 +10,7 @@
     <Programa />
     <Programa />
   </div>
+  <Noticias />
 </template>
 
 <script>
@@ -21,6 +22,7 @@ import cardComponent from "@/components/Home/CardComponent.vue";
 import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
 import MapComponent from "@/components/Home/MapComponent.vue";
 import Programa from "@/components/Home/ProgramaComponent.vue";
+import Noticias from "@/components/Home/NoticiasComponent.vue";
 
 export default {
   name: "HomeView",
@@ -31,6 +33,7 @@ export default {
     ServiciosMunicipales,
     MapComponent,
     Programa,
+    Noticias,
   },
 };
 </script>
