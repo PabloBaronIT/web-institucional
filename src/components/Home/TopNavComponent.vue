@@ -36,17 +36,9 @@
   <div class="colores">
     <div class="red"></div>
     <div class="green"></div>
-    <div class="yellow"></div>
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="yellow"></div>
     <div class="red"></div>
     <div class="green"></div>
     <div class="red"></div>
-    <div class="green"></div>
-    <div class="yellow"></div>
-    <div class="red"></div>
-    <div class="green"></div>
   </div>
 </template>
 <script>
@@ -143,11 +135,7 @@ export default {
   width: 20%;
   background: var(--red);
 }
-.yellow {
-  height: 10px;
-  width: 20%;
-  background: var(--yellow);
-}
+
 .green {
   height: 10px;
   width: 20%;

@@ -223,6 +223,11 @@ section {
   transition: all 0.3s ease;
 }
 
+.lista-expandida {
+  height: 120px; /* Tamaño fijo de la lista desplegable */
+  overflow: hidden; /* Esconde el contenido que sobresale del tamaño fijo */
+}
+
 .lista-servicios:focus {
   background: var(--red);
 }

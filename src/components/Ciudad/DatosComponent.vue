@@ -1,55 +1,20 @@
 <template>
   <main class="container">
     <section class="dato">
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
+      <h1>4</h1>
+      Instituciones Educativas
     </section>
     <section class="dato">
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
+      <h1>2</h1>
+      Museos Historcos
     </section>
     <section class="dato">
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
-      <img
-        src="https://github.com/OficinaVirtualBaron/oficina-vue/blob/main/public/img/Registro%20Civil.png?raw=true"
-        alt=""
-      />
-      <p>Datos</p>
+      <h1>34</h1>
+      Industrias Creciendo
+    </section>
+    <section class="dato">
+      <h1>55</h1>
+      Comercios y Servicios
     </section>
   </main>
 </template>
