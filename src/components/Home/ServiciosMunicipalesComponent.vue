@@ -157,11 +157,7 @@ export default {
       ],
     };
   },
-  computed: {
-    showList() {
-      return this.colapseId !== 0;
-    },
-  },
+  computed: {},
 };
 </script>
 
