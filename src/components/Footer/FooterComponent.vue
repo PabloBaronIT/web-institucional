@@ -64,7 +64,6 @@ footer {
 
 .info-container {
   width: 100%;
-
   flex-flow: row nowrap;
   display: flex;
   align-items: center;

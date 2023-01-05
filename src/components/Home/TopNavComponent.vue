@@ -7,7 +7,7 @@
         <button class="dropbtn">La ciudad</button>
         <div class="dropdown-content">
           <router-link :to="`/ciudad`"> Sobre la ciudad </router-link>
-          <router-link :to="`/ciudad`">Historia </router-link>
+          <router-link :to="`/historia`">Historia </router-link>
           <router-link :to="`/ciudad`"> Georeferecial </router-link>
         </div>
       </div>

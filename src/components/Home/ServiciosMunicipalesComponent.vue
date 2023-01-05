@@ -19,7 +19,7 @@
           <img class="svg flecha" src="@/assets/flecha.svg" alt="" />
         </div>
         <div
-          v-if="colapse == true && colapseId === servicio.id"
+          v-if="showlist === true && colapseId === servicio.id"
           class="lista-expandida"
         >
           <ul>
@@ -157,10 +157,9 @@ export default {
       ],
     };
   },
-  methods: {
-    Colapse(id) {
-      this.colapseId = id;
-      this.colapse = !this.colapse;
+  computed: {
+    showList() {
+      return this.colapseId !== 0;
     },
   },
 };

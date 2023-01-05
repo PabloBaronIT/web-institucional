@@ -43,7 +43,7 @@ export default {
   justify-content: center;
 }
 .col-footer {
-  margin: 10px 40px;
+  margin: 5%;
 }
 
 h5 {
