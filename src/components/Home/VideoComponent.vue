@@ -1,64 +1,140 @@
 <template>
   <div class="video-container">
-    <div class="video-text">
-      <h1 class="video-h1">Ciudad de <span>Campo Bravo</span>, tu ciudad</h1>
+    <div class="tiempo">
+      <img :src="this.icono" alt="iamgen" />
+      <h3>LUNES <br />OCT 09</h3>
+      <h6>
+        Máx:{{ this.tiempo.temperature_max }}°C/Min:
+        {{ this.tiempo.temperature_min }}°C
+      </h6>
+      <div class="lin"></div>
+      <h5>
+        {{ new Date().toLocaleTimeString().slice(0, -3) }}hs <br />
+        {{ this.text[0] }} <br />HUMEDAD {{ this.tiempo.humidity }} %
+      </h5>
+    </div>
+    <div class="texto">
+      <h1 class="trabajando">Trabajando</h1>
+      <h1 class="vos">para vos</h1>
     </div>
 
-    <video muted autoplay loop>
-      <source src="@\assets\ciudad.mp4" type="video/mp4" />
-    </video>
-    <div class="capa"></div>
+    <img src="@/assets/videos/ciudad.gif" alt="Funny image" class="gif" />
+    <div class="linea"></div>
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   name: "VideoComponent",
+  data() {
+    return {
+      tiempo: "",
+      text: "",
+      icono: "",
+    };
+  },
+  created() {
+    this.getTiempo();
+  },
+  methods: {
+    getTiempo() {
+      axios
+        .get(
+          "https://api.tutiempo.net/json/?lan=es&apid=a5GX44aXXaahzCV&ll=-31.67,-63.07"
+        )
+        .then((response) => {
+          console.log(response);
+          this.tiempo = response.data.day1;
+          let asd = response.data.day1.text;
+          let icon = response.data.day1.icon;
+          this.text = asd.split(" ");
+
+          this.icono = `https://v5i.tutiempo.net/wi/02/30/${icon}.png`;
+        });
+    },
+  },
 };
 </script>
 
 <style>
 .video-container {
-  min-height: 45vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 5px 5px rgba(94, 94, 94, 0.568);
 }
 
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.gif {
+  width: 100vw;
+  height: 82vh;
 }
-
-.video-text {
-  position: absolute;
-  top: 0;
-  left: 0;
+.linea {
   width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.7;
+  height: 6px;
+  background: linear-gradient(
+    270deg,
+    #e52320 9.64%,
+    #ffcc03 55.98%,
+    #019939 87.68%
+  );
+}
+.tiempo {
+  position: absolute;
+  top: 7vh;
+  left: 7vw;
+  width: 12vw;
+  height: 50vh;
   z-index: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: column wrap;
+  flex-direction: column;
   color: #fff;
-  padding: 50px;
-}
-
-.video-h1 {
+  background: rgba(245, 245, 245, 0.1);
+  backdrop-filter: blur(7.5px);
+  border-bottom-right-radius: 20px;
+  padding: 1%;
   text-align: left;
-  height: 200px;
-  width: 200px;
 }
 
-span {
-  color: var(--blue);
+.tiempo h3 {
+  font-weight: 400;
+}
+.tiempo h6 {
+  font-weight: 100;
+}
+.tiempo h5 {
+  font-weight: 400;
+}
+.lin {
+  background: white;
+  height: 2px;
+  width: 95%;
+}
+img {
+  width: 5vw;
+  height: 8vh;
+  margin: auto;
+}
+.texto {
+  position: absolute;
+  bottom: 7vh;
+  right: 7vw;
+  text-align: right;
+}
+.trabajando {
+  background: linear-gradient(154deg, #019939 14.5%, #ffcc03 90.2%);
+  font-size: 90px;
+  font-weight: 400;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.vos {
+  color: white;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: -7vh;
+  margin-right: -1vw;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <h3 style="font-weight: 800">TELEFONOS UTILES-ATENCION 24 HS</h3>
     <div class="telefonos-container">
       <h4>Telefonos utiles:</h4>
       <div class="telefono">
@@ -41,16 +42,25 @@ export default {
 <style scoped>
 footer {
   margin: 0;
-  background: var(--blue);
+  background: linear-gradient(
+    90deg,
+    #019939 -3.32%,
+    #ffcc03 49.27%,
+    #e52320 110.14%
+  );
+  /* background: var(--blue); */
   display: flex;
   flex-flow: column wrap;
   height: auto;
-  box-shadow: 0px 0px 15px #aaa;
+  /* box-shadow: 0px 0px 15px #aaa; */
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  color: #019939;
 }
-
+h3 {
+  font-size: 800;
+}
 .telefonos-container {
   width: 90%;
   display: flex;
