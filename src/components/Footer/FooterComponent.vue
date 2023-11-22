@@ -1,41 +1,34 @@
 <template>
   <footer>
-    <h3 style="font-weight: 800">TELEFONOS UTILES-ATENCION 24 HS</h3>
     <div class="telefonos-container">
-      <h4>Telefonos utiles:</h4>
-      <div class="telefono">
-        <p>03525 - 443770</p>
-        <p>SALUD</p>
-      </div>
-      <div class="telefono">
-        <p>03525 - 443770</p>
-        <p>OBRADOR</p>
-      </div>
-      <div class="telefono">
-        <p>03525 - 443770</p>
-        <p>VIOLENCIA DE GENERO</p>
+      <h5 style="font-weight: 900; font-size: 24px">
+        TELÉFONOS ÚTILES-ATENCIÓN 24 HS
+      </h5>
+      <div class="telefonos">
+        <div style="text-align: center">
+          <h4>HOSPITAL</h4>
+          <h1 class="numeros">111</h1>
+        </div>
+        <div style="text-align: center">
+          <h4>ATENCIÓN AL VECINO</h4>
+          <h1 class="numeros">147</h1>
+        </div>
+        <div style="text-align: center">
+          <h4>POLICIA</h4>
+          <h1 class="numeros">102</h1>
+        </div>
       </div>
     </div>
-
-    <div class="info-container">
-      <img
-        src="@/assets/campoBravo.png"
-        alt=""
-        style="width: 20%; height: 50px"
-      />
-      <filaFooterComponent />
-    </div>
+    <h5 class="direccion">
+      <strong>Municipalida de Sacanta | </strong>
+      25 de Mayo 292, Sacanta, Cordoba | CP X5945 | TEL.: 03533 15 417923
+    </h5>
   </footer>
 </template>
 
 <script>
-import FilaFooterComponent from "@/components/Footer/FilaFooterComponent.vue";
-
 export default {
   name: "FooterComponent",
-  components: {
-    FilaFooterComponent,
-  },
 };
 </script>
 
@@ -51,37 +44,47 @@ footer {
   /* background: var(--blue); */
   display: flex;
   flex-flow: column wrap;
-  height: auto;
+  height: 45vh;
   /* box-shadow: 0px 0px 15px #aaa; */
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
+  /* padding: 20px; */
   color: #019939;
+  width: 100vw;
 }
 h3 {
   font-size: 800;
 }
 .telefonos-container {
-  width: 90%;
+  width: 88%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background: rgba(245, 245, 245, 0.15);
+  backdrop-filter: blur(7.5px);
+  border-radius: 50px 0px;
+  padding-top: 1rem;
+  border: 0.5px solid white;
 }
-
-.telefono p {
-  margin: 0px;
-}
-
-.info-container {
-  width: 100%;
-  flex-flow: row nowrap;
+.telefonos {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  color: white;
+  margin-top: 2vh;
 }
-
-footer img {
-  object-fit: cover;
-  width: 100%;
+.numeros {
+  color: #019939;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: normal;
+  font-style: normal;
+  margin-top: -3vh;
+}
+.direccion {
+  color: white;
+  font-weight: 400;
 }
 </style>

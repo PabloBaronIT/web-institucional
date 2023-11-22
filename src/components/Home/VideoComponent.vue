@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .video-container {
   position: relative;
   display: flex;
@@ -125,8 +125,10 @@ img {
 .trabajando {
   background: linear-gradient(154deg, #019939 14.5%, #ffcc03 90.2%);
   font-size: 90px;
-  font-weight: 400;
+  font-weight: 900;
   background-clip: text;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
