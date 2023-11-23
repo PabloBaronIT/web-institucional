@@ -12,7 +12,7 @@
     <div class="text-derecho">
       <h1 class="text" style="margin-left: 2vw">Tus</h1>
       <h1 class="grande">gestiones</h1>
-      <h1 class="text" style="margin-top: -5vh; margin-left: 4vw">
+      <h1 class="text" style="margin-top: -7%; margin-left: 4vw">
         donde estés
       </h1>
     </div>
@@ -87,12 +87,12 @@ export default {
   color: white;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
   /* line-height: normal; */
-  margin-top: -8vh;
+  margin-top: -11%;
 }
 .muni-linea {
   position: absolute;
   right: 11vw;
-  bottom: 17vh;
+  bottom: 20%;
   width: 14vw;
   height: 9vh;
   display: flex;

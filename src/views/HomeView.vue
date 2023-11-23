@@ -10,6 +10,11 @@
     </div>
     <GridProgramasComponent />
     <CardConsejoComponent />
+    <div class="linea">
+      <div class="izquierdo"></div>
+      <h4>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h4>
+      <div class="derecho"></div>
+    </div>
     <!-- <cardComponent /> -->
     <!-- <btnServiciosComponent /> -->
   </div>

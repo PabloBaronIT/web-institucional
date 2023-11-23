@@ -136,7 +136,7 @@ img {
   color: white;
   font-weight: 600;
   font-size: 60px;
-  margin-top: -7vh;
+  margin-top: -7%;
   margin-right: -1vw;
 }
 </style>
