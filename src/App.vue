@@ -34,7 +34,7 @@ export default {
     #ffcc03 53.06%,
     #e52320 106.23%
   );
-  background: #d3d3d3;
+  background: #f5f5f5;
 }
 
 nav {

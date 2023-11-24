@@ -5,7 +5,8 @@
       :key="item.id"
       :class="`item item${index}`"
     >
-      <img :src="item.imagen" alt="" />
+      <img :src="item.imagen" alt="imagen" />
+
       <div class="titulo">
         <h3>{{ item.titulo }}</h3>
       </div>
@@ -20,37 +21,38 @@ export default {
     return {
       programas: [
         {
-          imagen: "../../assets/images/Produccion.svg",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848226/Frame_urtubl.jpg",
           titulo: "PRODUCCIÓN",
           id: 1,
         },
         {
           imagen:
-            "https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848299/icon-obras_zzr092.jpg",
           titulo: "OBRAS PÚBLICAS",
           id: 1,
         },
         {
           imagen:
-            "https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848341/icon-ambiente_rcpa9w.jpg",
           titulo: "AMBIENTE",
           id: 1,
         },
         {
           imagen:
-            "https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848396/icon-cultura_dfhpeu.jpg",
           titulo: "CULTURA",
           id: 1,
         },
         {
           imagen:
-            "https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848435/icon-educacion_bftfwi.jpg",
           titulo: "EDUCACIÓN",
           id: 1,
         },
         {
           imagen:
-            "https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848471/icon-empleo_atceng.jpg",
           titulo: "EMPLEO",
           id: 1,
         },
@@ -66,7 +68,7 @@ export default {
   grid-template-rows: repeat(2, 1fr); /* Crea 3 filas de altura fija de 100px */
   gap: 25px;
   margin: auto;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
   width: 88%;
   /* background: rebeccapurple; */
   /* background: linear-gradient(

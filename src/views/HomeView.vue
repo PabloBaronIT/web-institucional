@@ -15,6 +15,7 @@
       <h4>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h4>
       <div class="derecho"></div>
     </div>
+    <CarouselComponent />
     <!-- <cardComponent /> -->
     <!-- <btnServiciosComponent /> -->
   </div>
@@ -35,6 +36,7 @@ import ImagenComponent from "@/components/Imagen/ImagenComponent.vue";
 import CardEcoComponent from "@/components/Ecologico/CardEcoComponent.vue";
 import CardConsejoComponent from "@/components/Consejo/CardConsejoComponent.vue";
 import GridProgramasComponent from "@/components/Programas/GridProgramasComponent.vue";
+import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
 // import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 // import cardComponent from "@/components/Home/CardComponent.vue";
 // import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
@@ -50,6 +52,7 @@ export default {
     CardConsejoComponent,
     ImagenComponent,
     GridProgramasComponent,
+    CarouselComponent,
     // btnServiciosComponent,
     // cardComponent,
     // ServiciosMunicipales,
