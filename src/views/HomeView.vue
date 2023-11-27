@@ -1,6 +1,7 @@
 <template>
   <videoComponent />
   <div class="main">
+    <TarjetasComponent />
     <ImagenComponent />
     <CardEcoComponent />
     <div class="linea">
@@ -34,9 +35,10 @@
 import videoComponent from "@/components/Home/VideoComponent";
 import ImagenComponent from "@/components/Imagen/ImagenComponent.vue";
 import CardEcoComponent from "@/components/Ecologico/CardEcoComponent.vue";
-import CardConsejoComponent from "@/components/Consejo/CardConsejoComponent.vue";
 import GridProgramasComponent from "@/components/Programas/GridProgramasComponent.vue";
 import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
+import TarjetasComponent from "@/components/Buscador/TarjetasComponent.vue";
+import CardConsejoComponent from "@/components/Consejo/CardConsejoComponent.vue";
 // import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 // import cardComponent from "@/components/Home/CardComponent.vue";
 // import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
@@ -53,6 +55,7 @@ export default {
     ImagenComponent,
     GridProgramasComponent,
     CarouselComponent,
+    TarjetasComponent,
     // btnServiciosComponent,
     // cardComponent,
     // ServiciosMunicipales,

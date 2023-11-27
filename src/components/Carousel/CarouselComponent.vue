@@ -68,22 +68,24 @@ export default defineComponent({
   height: 40vh;
 }
 .carousel__slide {
-  padding: 5px;
+  padding: 0px 0.5rem;
   background: #fff;
   height: 30vh;
   border-radius: 30px 0px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  text-align: left;
   /* width: 18 vw; */
   /* width: 10vw; */
 }
 img {
   height: 50%;
   width: 80%;
+  border-radius: 30px 0px;
 }
 .carousel__viewport {
-  perspective: 2000px;
+  /* perspective: 2000px; */
 }
 
 .carousel__track {
@@ -121,6 +123,6 @@ img {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
   height: 35vh;
-  margin: 1rem 2rem;
+  margin: 1.5rem 2rem;
 }
 </style>

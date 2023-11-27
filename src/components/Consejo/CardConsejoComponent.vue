@@ -32,7 +32,7 @@ export default {
   margin-top: 2vh;
   padding-top: 0.6rem;
   background-image: url("./../../assets/images/CirculoFondo.svg");
-  opacity: 0.8;
+  /* opacity: 0.8; */
   background-repeat: repeat;
   background-position: inherit;
 }

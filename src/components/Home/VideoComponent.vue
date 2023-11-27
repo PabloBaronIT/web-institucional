@@ -1,7 +1,7 @@
 <template>
   <div class="video-container">
     <div class="tiempo">
-      <img :src="this.icono" alt="iamgen" />
+      <img :src="this.icono" alt="imagen" />
       <h3>LUNES <br />OCT 09</h3>
       <h6>
         Máx:{{ this.tiempo.temperature_max }}°C/Min:
@@ -9,7 +9,8 @@
       </h6>
       <div class="lin"></div>
       <h5>
-        {{ new Date().toLocaleTimeString().slice(0, -3) }}hs <br />
+        <!-- {{ new Date().toLocaleTimeString().slice(0, -6) }} hs <br /> -->
+        {{ this.horas }} : {{ this.minutos }} hs<br />
         {{ this.text[0] }} <br />HUMEDAD {{ this.tiempo.humidity }} %
       </h5>
     </div>
@@ -31,10 +32,13 @@ export default {
       tiempo: "",
       text: "",
       icono: "",
+      horas: "",
+      minutos: "",
     };
   },
   created() {
     this.getTiempo();
+    setInterval(() => this.setTiempo(), 1000);
   },
   methods: {
     getTiempo() {
@@ -51,6 +55,15 @@ export default {
 
           this.icono = `https://v5i.tutiempo.net/wi/02/30/${icon}.png`;
         });
+    },
+    setTiempo() {
+      const date = new Date();
+      let horas = date.getHours();
+      let minutos = date.getMinutes();
+      horas = horas <= 9 ? `${horas}`.padStart(2, 0) : horas;
+      minutos = minutos <= 9 ? `${minutos}`.padStart(2, 0) : minutos;
+      this.horas = horas;
+      this.minutos = minutos;
     },
   },
 };
@@ -82,7 +95,7 @@ export default {
 }
 .tiempo {
   position: absolute;
-  top: 7vh;
+  top: 16vh;
   left: 7vw;
   width: 12vw;
   height: 50vh;
