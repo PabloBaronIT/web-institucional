@@ -8,7 +8,12 @@
     <Slide v-for="slide in this.novedades" :key="slide">
       <img :src="slide.imagen" alt="imagen" />
       <p>{{ new Date().toLocaleDateString() }}</p>
-      <p>{{ slide.titulo }}</p>
+
+      <router-link to="/historia">
+        <div class="interior-titulo">
+          <p>{{ slide.titulo }}</p>
+        </div>
+      </router-link>
       <!-- <p>Habilitacion de comercio</p> -->
     </Slide>
     <template #addons>
@@ -75,13 +80,19 @@ export default defineComponent({
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  text-align: left;
   /* width: 18 vw; */
   /* width: 10vw; */
 }
+a {
+  color: #4b4a49;
+  text-decoration: none;
+}
+a:hover {
+  color: #333232;
+}
 img {
   height: 50%;
-  width: 80%;
+  width: 95%;
   border-radius: 30px 0px;
 }
 .carousel__viewport {
@@ -99,6 +110,7 @@ img {
 .carousel__slide {
   opacity: 0.5;
   transform: rotateY(-20deg) scale(0.9);
+  padding-top: 1rem;
 }
 
 .carousel__slide--active ~ .carousel__slide {
@@ -124,5 +136,10 @@ img {
   transform: rotateY(0) scale(1.1);
   height: 35vh;
   margin: 1.5rem 2rem;
+}
+.interior-titulo {
+  width: 75%;
+  margin: auto;
+  text-align: left;
 }
 </style>

@@ -1,25 +1,27 @@
 <template>
-  <FlyerComponent
-    :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
-    :text="'Tema del que se va a hablar'"
-  />
+  <div class="contenedor">
+    <FlyerComponent
+      :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
+      :text="'Programas'"
+    />
 
-  <ImgArticle />
+    <ImgArticle />
 
-  <div class="fade-in full-width">
-    <DatosComponent />
+    <div class="fade-in full-width">
+      <DatosComponent />
+    </div>
+
+    <ArticleComponent />
+
+    <FlyerComponent
+      :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
+      :text="'Tema del que se va a hablar'"
+    />
+
+    <ArticleComponent />
+
+    <LineaComponent />
   </div>
-
-  <ArticleComponent />
-
-  <FlyerComponent
-    :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
-    :text="'Tema del que se va a hablar'"
-  />
-
-  <ArticleComponent />
-
-  <LineaComponent />
 </template>
 
 <script>
@@ -40,4 +42,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.contenedor {
+  padding-top: 10vh;
+}
+</style>

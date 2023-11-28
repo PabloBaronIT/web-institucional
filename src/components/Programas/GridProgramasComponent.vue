@@ -5,11 +5,13 @@
       :key="item.id"
       :class="`item item${index}`"
     >
-      <img :src="item.imagen" alt="imagen" />
+      <router-link to="/ciudad" class="item">
+        <img :src="item.imagen" alt="imagen" />
 
-      <div class="titulo">
-        <h3>{{ item.titulo }}</h3>
-      </div>
+        <div class="titulo">
+          <h3>{{ item.titulo }}</h3>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -103,6 +105,9 @@ h3 {
   justify-content: space-around;
   color: white;
   /* padding: 2rem; */
+}
+.item a {
+  text-decoration: none;
 }
 .item0,
 .item3 {

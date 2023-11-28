@@ -140,10 +140,11 @@ img {
   font-size: 90px;
   font-weight: 900;
   background-clip: text;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: white;
+  /* -webkit-text-stroke-width: 0.2px; */
+  /* -webkit-text-stroke-color: white; */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -webkit-text-stroke: 0.3px white;
 }
 .vos {
   color: white;

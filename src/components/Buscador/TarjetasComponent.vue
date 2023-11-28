@@ -4,7 +4,9 @@
     <div class="buscador">
       <label for="">Buscar</label>
       <input type="text" name="" id="" />
-      <i class="bi bi-search" style="color: white; font-size: 22px"></i>
+      <div>
+        <i class="bi bi-search" style="color: white; font-size: 22px"></i>
+      </div>
     </div>
     <h1>¿Qué necesitás hacer?</h1>
     <CaroulselTarjetasComponent />
@@ -65,6 +67,9 @@ h1 {
   border-bottom-left-radius: 50px;
   text-align: left;
   padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 label {
   color: white;

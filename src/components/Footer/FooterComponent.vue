@@ -2,7 +2,7 @@
   <footer>
     <div class="telefonos-container">
       <h5 style="font-weight: 900; font-size: 24px">
-        TELÉFONOS ÚTILES-ATENCIÓN 24 HS
+        TELÉFONOS ÚTILES - ATENCIÓN 24 HS
       </h5>
       <div class="telefonos">
         <div style="text-align: center">

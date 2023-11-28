@@ -2,7 +2,7 @@
   <div class="historia-container">
     <Flyer
       :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
-      :text="'Historia de Campo Bravo'"
+      :text="'Noticias'"
     />
     <Historia />
   </div>
@@ -21,4 +21,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.historia-container {
+  padding-top: 10vh;
+}
+</style>
