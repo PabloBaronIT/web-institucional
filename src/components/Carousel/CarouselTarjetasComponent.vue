@@ -36,7 +36,7 @@ export default defineComponent({
           titulo: "COMERCIO",
         },
         {
-          titulo: "SERVICIO DE VECINO",
+          titulo: "SERVICIO AL VECINO",
         },
         {
           titulo: "PAGOS",
@@ -68,10 +68,10 @@ h5 {
   padding: 0.3rem 0.3rem;
   background: #fff;
   height: 15vh;
-  width: 18vw;
+  max-width: 18vw;
   border-radius: 20px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  margin: 0.5rem;
+  margin: 0.5rem 1.5rem;
   /* width: 18 vw; */
   /* width: 10vw; */
 }
@@ -84,7 +84,10 @@ h5 {
   background: #fff;
   border-radius: 17px;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1.5rem 1.5rem;
   text-decoration: none;
+}
+.interior h5:hover {
+  color: #019939;
 }
 </style>

@@ -1,25 +1,24 @@
 <template>
   <videoComponent />
-  <div class="main">
-    <TarjetasComponent />
-    <ImagenComponent />
-    <CardEcoComponent />
-    <div class="linea">
-      <div class="izquierdo"></div>
-      <h4>DESCUBRÍ NUESTROS PROGRAMAS</h4>
-      <div class="derecho"></div>
-    </div>
-    <GridProgramasComponent />
-    <CardConsejoComponent />
-    <div class="linea">
-      <div class="izquierdo"></div>
-      <h4>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h4>
-      <div class="derecho"></div>
-    </div>
-    <CarouselComponent />
-    <!-- <cardComponent /> -->
-    <!-- <btnServiciosComponent /> -->
+  <TarjetasComponent />
+  <ImagenComponent />
+  <CardEcoComponent />
+  <div class="linea">
+    <div class="izquierdo"></div>
+    <h4>DESCUBRÍ NUESTROS PROGRAMAS</h4>
+    <div class="derecho"></div>
   </div>
+  <GridProgramasComponent />
+  <CardConsejoComponent />
+  <div class="linea">
+    <div class="izquierdo"></div>
+    <h4>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h4>
+    <div class="derecho"></div>
+  </div>
+  <CarouselComponent />
+
+  <!-- <cardComponent /> -->
+  <!-- <btnServiciosComponent /> -->
   <!-- <ServiciosMunicipales /> -->
   <!-- <MapComponent /> -->
   <div class="programas">
@@ -57,11 +56,11 @@ export default {
     CarouselComponent,
     TarjetasComponent,
     // btnServiciosComponent,
-    // cardComponent,
     // ServiciosMunicipales,
     // MapComponent,
     // Programa,
     // Noticias,
+    // cardComponent,
   },
 };
 </script>
@@ -75,19 +74,20 @@ export default {
 .main {
   display: flex;
   flex-direction: column;
+  /* width: 100%; */
 }
 
 .programas {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .linea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;

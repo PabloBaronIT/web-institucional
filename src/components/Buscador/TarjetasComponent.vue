@@ -5,10 +5,10 @@
       <label for="">Buscar</label>
       <input type="text" name="" id="" />
       <div>
-        <i class="bi bi-search" style="color: white; font-size: 22px"></i>
+        <i class="bi bi-search" style="color: white; font-size: 20px"></i>
       </div>
     </div>
-    <h1>¿Qué necesitás hacer?</h1>
+    <h2>¿Qué necesitás hacer?</h2>
     <CaroulselTarjetasComponent />
   </div>
 </template>
@@ -24,13 +24,13 @@ export default {
 <style scoped>
 .contenedor {
   position: relative;
-  background: gainsboro;
+  background: #eae9e9;
   color: rgba(255, 255, 255, 0.432);
-  height: 40vh;
+  height: 41vh;
   width: 88vw;
   margin: auto;
   border-radius: 50px 0px;
-  margin-top: 2vh;
+  margin-top: 7vh;
   padding-top: 2rem;
   background-image: url("./../../assets/images/CirculoFondoGrandes.svg");
   /* opacity: 0.8; */
@@ -39,10 +39,11 @@ export default {
   text-align: center;
   overflow: hidden;
 }
-h1 {
+h2 {
   color: #019939;
   font-weight: 600;
-  margin-top: 2vh;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 50px;
 }
 .top {
@@ -66,7 +67,7 @@ h1 {
   right: 0;
   border-bottom-left-radius: 50px;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;

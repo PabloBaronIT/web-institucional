@@ -18,6 +18,12 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   --green: #d1e9ea;
   --blue: #415f77;
@@ -35,14 +41,15 @@ export default {
     #e52320 106.23%
   );
   background: #f5f5f5;
+  /* width: 100%; */
 }
 
-nav {
+/* nav {
   padding: 30px;
 }
 
 nav a {
   font-weight: bold;
   color: #2c3e50;
-}
+} */
 </style>

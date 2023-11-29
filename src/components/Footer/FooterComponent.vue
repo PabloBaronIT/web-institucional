@@ -50,7 +50,7 @@ footer {
   justify-content: space-evenly;
   /* padding: 20px; */
   color: #019939;
-  width: 100vw;
+  width: 100%;
 }
 h3 {
   font-size: 800;

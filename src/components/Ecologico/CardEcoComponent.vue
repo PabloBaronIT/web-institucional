@@ -5,11 +5,11 @@
         <img src="@/assets/images/EcoLogo.svg" alt="" class="logo" />
       </div>
       <div class="text">
-        <h3>¡POR UNA PLANETA MAS VERDE!</h3>
+        <h3>¡POR UN PLANETA MÁS VERDE!</h3>
         <p>
-          La digitalización es la clave para proteger nuestro planeata. Al
-          reducir el uso del papel y adoptar tecnologias ecoamigables podemos
-          hacer del mundo un lugar mas verde y limpio.
+          La digitalización es la clave para proteger nuestro planeta. Al
+          reducir el uso de papel y adoptar tecnologías ecoamigables podemos
+          hacer del mundo un lugar más verde y limpio.
         </p>
       </div>
     </div>
@@ -28,8 +28,8 @@ export default {
   width: 88vw;
   margin: auto;
   border-radius: 0px 50px;
-  margin-top: 2vh;
-  padding-top: 0.6rem;
+  margin-top: 3vh;
+  padding: 1.5rem;
 }
 .medio {
   width: 70vw;
@@ -50,6 +50,8 @@ export default {
 }
 .text p {
   font-size: 18px;
+  margin-top: -0.5rem;
+  font-weight: 200;
 }
 .text h3 {
   font-weight: 700;

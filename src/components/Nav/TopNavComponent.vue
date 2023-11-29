@@ -40,7 +40,7 @@
       </div>
       <div class="dropdown">
         <button
-          class="btn btn dropdown-toggle"
+          class="btn btn dropdown-toggle asd"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -102,7 +102,6 @@ export default {
 </style>
 <style scoped>
 .top-nav-container {
-  width: 100%;
   height: 80px;
   display: flex;
   flex-flow: row nowrap;
@@ -112,6 +111,8 @@ export default {
   background: var(--fondo);
   position: fixed;
   z-index: 15;
+  width: 100%;
+  padding: 0px 4rem;
 }
 .nav-botones {
   width: 50%;
@@ -120,11 +121,15 @@ export default {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-left: 12rem;
 }
 .btn {
   color: white;
   font-size: 16px;
   font-weight: 700;
+}
+.btn:hover {
+  color: #4b4a49;
 }
 .redes {
   max-width: 40px;
@@ -132,7 +137,8 @@ export default {
 
 .redes-container {
   display: flex;
-  width: 12%;
+  width: 10%;
   justify-content: space-between;
+  /* margin-right: 3rem; */
 }
 </style>

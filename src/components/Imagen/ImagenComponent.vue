@@ -12,7 +12,7 @@
     <div class="text-derecho">
       <h1 class="text" style="margin-left: 2vw">Tus</h1>
       <h1 class="grande">gestiones</h1>
-      <h1 class="text" style="margin-top: -7%; margin-left: 4vw">
+      <h1 class="text" style="margin-top: -6%; margin-left: 4vw">
         donde estés
       </h1>
     </div>
@@ -31,11 +31,11 @@ export default {
 .contenedor-imagen {
   position: relative;
   width: 88vw;
-  height: 80vh;
+  height: 86vh;
   background-repeat: no-repeat;
   margin: auto;
   border-radius: 60px 0px 60px 0px;
-  margin-top: 5vh;
+  margin-top: 7vh;
   background: linear-gradient(
     272deg,
     #000 -23.75%,
@@ -44,6 +44,8 @@ export default {
   );
 
   background-image: url("@/../public/images/imagenHombre.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   /* filter: brightness(0.7); */
   z-index: 1;
   overflow: hidden;
@@ -51,9 +53,10 @@ export default {
 .capa {
   position: absolute;
   border-radius: 60px 0px 60px 0px;
+  background-size: contain;
 
   width: 88vw;
-  height: 80vh;
+  height: 86vh;
   background: linear-gradient(
     272deg,
     #000 -23.75%,
@@ -92,9 +95,9 @@ export default {
 .muni-linea {
   position: absolute;
   right: 11vw;
-  bottom: 20%;
-  width: 14vw;
-  height: 9vh;
+  bottom: 24%;
+  width: 13vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
