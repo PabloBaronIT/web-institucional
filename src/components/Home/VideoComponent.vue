@@ -17,7 +17,8 @@
       </p>
     </div>
     <div class="texto">
-      <h1 class="trabajando">trabajando</h1>
+      <!-- <h1 class="trabajando">trabajando</h1> -->
+      <img src="@/assets/Trabajando.png" alt="" class="trabajando" />
       <h1 class="vos">para vos</h1>
     </div>
     <img
@@ -160,7 +161,7 @@ export default {
   position: absolute;
   right: -10rem;
   bottom: 0;
-  height: 105%;
+  height: 85%;
   width: 50vw;
   /* z-index: 2; */
 }
@@ -179,7 +180,7 @@ export default {
 .gif {
   width: 100%;
   overflow: hidden;
-  height: 78vh;
+  height: 86vh;
   border-bottom-right-radius: 60px;
 }
 .linea {
@@ -196,7 +197,7 @@ export default {
 }
 .tiempo {
   position: absolute;
-  top: 10vh;
+  top: 25%;
   left: 7vw;
   width: 12vw;
   height: 55vh;
@@ -209,7 +210,7 @@ export default {
   border-bottom-right-radius: 20px;
   padding: 1%;
   text-align: left;
-  border: 0.5px solid white;
+  /* border: 0.5px solid white; */
 }
 
 .tiempo h3 {
@@ -254,9 +255,13 @@ img {
 }
 .vos {
   color: white;
-  font-weight: 550;
+  font-weight: 400;
   font-size: 60px;
   margin-top: -7%;
-  margin-right: -1vw;
+  margin-right: -3.5vw;
+}
+.trabajando {
+  width: 28vw;
+  height: 12vh;
 }
 </style>

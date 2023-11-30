@@ -1,15 +1,62 @@
 <template>
   <div class="grid">
-    <div
-      v-for="(item, index) in this.programas"
-      :key="item.id"
-      :class="`item item${index}`"
-    >
-      <router-link to="/ciudad" class="item">
-        <img :src="item.imagen" alt="imagen" />
+    <div>
+      <router-link to="/ciudad" class="item item0">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Produccion.svg" alt="" />
 
         <div class="titulo">
-          <h3>{{ item.titulo }}</h3>
+          <h3>PRODUCCIÓN</h3>
+        </div>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/ciudad" class="item item1">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Obras-Publicas.svg" alt="" />
+
+        <div class="titulo">
+          <h3>OBRAS PÚBLICAS</h3>
+        </div>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/ciudad" class="item item2">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Ambiente.svg" alt="" />
+
+        <div class="titulo">
+          <h3>AMBIENTE</h3>
+        </div>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/ciudad" class="item item3">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Cultura.svg" alt="" />
+
+        <div class="titulo">
+          <h3>CULTURA</h3>
+        </div>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/ciudad" class="item item4">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Educacion.svg" alt="" />
+
+        <div class="titulo">
+          <h3>EDUCACIÓN</h3>
+        </div>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/ciudad" class="item item5">
+        <!-- <img :src="item.imagen" alt="imagen" /> -->
+        <img src="@/assets/images/Empleo.svg" alt="" />
+
+        <div class="titulo">
+          <h3>EMPLEO</h3>
         </div>
       </router-link>
     </div>
@@ -20,46 +67,7 @@ export default {
   name: "GridProgramasComponent",
   components: {},
   data() {
-    return {
-      programas: [
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848226/Frame_urtubl.jpg",
-          titulo: "PRODUCCIÓN",
-          id: 1,
-        },
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848299/icon-obras_zzr092.jpg",
-          titulo: "OBRAS PÚBLICAS",
-          id: 1,
-        },
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848341/icon-ambiente_rcpa9w.jpg",
-          titulo: "AMBIENTE",
-          id: 1,
-        },
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848396/icon-cultura_dfhpeu.jpg",
-          titulo: "CULTURA",
-          id: 1,
-        },
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848435/icon-educacion_bftfwi.jpg",
-          titulo: "EDUCACIÓN",
-          id: 1,
-        },
-        {
-          imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700848471/icon-empleo_atceng.jpg",
-          titulo: "EMPLEO",
-          id: 1,
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
@@ -70,7 +78,7 @@ export default {
   grid-template-rows: repeat(2, 1fr); /* Crea 3 filas de altura fija de 100px */
   gap: 25px;
   margin: auto;
-  margin-bottom: 8vh;
+  margin-bottom: 10vh;
   width: 88%;
   /* background: rebeccapurple; */
   /* background: linear-gradient(
@@ -83,7 +91,7 @@ export default {
 }
 img {
   max-width: 50%;
-  max-height: 50%;
+  max-height: 70%;
 }
 h3 {
   font-weight: 900;
@@ -104,9 +112,9 @@ h3 {
   align-items: center;
   justify-content: space-around;
   color: white;
-  /* padding: 2rem; */
+  /* padding-left: 2rem; */
 }
-.item a {
+a {
   text-decoration: none;
 }
 .item0,

@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="telefonos-container">
-      <h5 style="font-weight: 900; font-size: 24px">
+      <h5 style="font-weight: 700; font-size: 24px">
         TELÉFONOS ÚTILES - ATENCIÓN 24 HS
       </h5>
       <div class="telefonos">
@@ -14,7 +14,7 @@
           <h1 class="numeros">147</h1>
         </div>
         <div style="text-align: center">
-          <h4>POLICIA</h4>
+          <h4>POLICíA</h4>
           <h1 class="numeros">102</h1>
         </div>
       </div>
@@ -44,7 +44,7 @@ footer {
   /* background: var(--blue); */
   display: flex;
   flex-flow: column wrap;
-  height: 45vh;
+  height: 43vh;
   /* box-shadow: 0px 0px 15px #aaa; */
   align-items: center;
   justify-content: space-evenly;
@@ -52,8 +52,9 @@ footer {
   color: #019939;
   width: 100%;
 }
-h3 {
-  font-size: 800;
+h4 {
+  font-weight: 400;
+  line-height: normal;
 }
 .telefonos-container {
   width: 88%;
@@ -65,15 +66,15 @@ h3 {
   backdrop-filter: blur(7.5px);
   border-radius: 50px 0px;
   padding-top: 1rem;
-  border: 0.5px solid white;
 }
 .telefonos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   color: white;
-  margin-top: 2vh;
+  margin-top: 1vh;
+  margin-bottom: -1rem;
 }
 .numeros {
   color: #019939;
@@ -81,10 +82,12 @@ h3 {
   font-weight: 900;
   line-height: normal;
   font-style: normal;
-  margin-top: -3vh;
+  margin-top: -5vh;
 }
 .direccion {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1px;
 }
 </style>

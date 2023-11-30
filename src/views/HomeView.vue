@@ -5,26 +5,28 @@
   <CardEcoComponent />
   <div class="linea">
     <div class="izquierdo"></div>
-    <h4>DESCUBRÍ NUESTROS PROGRAMAS</h4>
+    <h5>DESCUBRÍ NUESTROS PROGRAMAS</h5>
     <div class="derecho"></div>
   </div>
   <GridProgramasComponent />
   <CardConsejoComponent />
   <div class="linea">
     <div class="izquierdo"></div>
-    <h4>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h4>
+    <h5>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h5>
     <div class="derecho"></div>
   </div>
-  <CarouselComponent />
+  <div class="carouselNoticias">
+    <CarouselComponent />
+  </div>
 
   <!-- <cardComponent /> -->
   <!-- <btnServiciosComponent /> -->
   <!-- <ServiciosMunicipales /> -->
   <!-- <MapComponent /> -->
-  <div class="programas">
-    <!-- <Programa /> -->
-    <!-- <Programa /> -->
-  </div>
+  <!-- <div class="programas"> -->
+  <!-- <Programa /> -->
+  <!-- <Programa /> -->
+  <!-- </div> -->
   <Noticias />
 </template>
 
@@ -66,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-.cards-container {
+/* .cards-container {
   display: flex;
   justify-content: center;
 }
@@ -75,7 +77,6 @@ export default {
   display: flex;
   flex-direction: column;
   /* width: 100%; */
-}
 
 .programas {
   display: flex;
@@ -89,10 +90,10 @@ export default {
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
-.linea h4 {
+.linea h5 {
   font-weight: 600;
   color: #4b4a49;
 }
@@ -100,10 +101,17 @@ export default {
   width: 33vw;
   height: 1px;
   background: #4b4a49;
+  margin-bottom: 1%;
 }
 .derecho {
   height: 1px;
   width: 33vw;
   background: #4b4a49;
+  margin-bottom: 1%;
+}
+.carouselNoticias {
+  height: 60vh;
+  /* background-color: rebeccapurple; */
+  align-items: center;
 }
 </style>

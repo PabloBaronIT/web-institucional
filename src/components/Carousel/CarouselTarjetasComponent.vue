@@ -48,11 +48,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-/* .contenedor {
+.contenedor {
   width: 68%;
   height: 30vh;
   margin-top: -2rem;
-} */
+  background: rebeccapurple;
+}
 h5 {
   color: #4b4a49;
   font-weight: 700;

@@ -1,17 +1,19 @@
 <template>
   <Carousel
-    :itemsToShow="3.95"
+    :itemsToShow="3.5"
     :wrapAround="true"
     :transition="500"
     class="contenedor"
   >
     <Slide v-for="slide in this.novedades" :key="slide">
       <img :src="slide.imagen" alt="imagen" />
-      <p>{{ new Date().toLocaleDateString() }}</p>
 
       <router-link to="/historia">
         <div class="interior-titulo">
-          <p>{{ slide.titulo }}</p>
+          <p style="font-size: 13px; font-weight: 600">
+            {{ new Date().toLocaleDateString() }}
+          </p>
+          <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
         </div>
       </router-link>
       <!-- <p>Habilitacion de comercio</p> -->
@@ -53,7 +55,7 @@ export default defineComponent({
         {
           titulo: "Concurso de precio ENHOSA-Red de agua Potable Sacanta.",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1700856868/Sacanta_logo_Gesti%C3%B2n-01_jphdsg.png",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1683665000/sxli9cotqczr89ot2frw.png",
         },
         {
           titulo: "COE Sacanta (Centro de Operaciones de Emergencias",
@@ -69,17 +71,21 @@ export default defineComponent({
 <style scoped>
 .contenedor {
   width: 68%;
+  height: 100%;
+
   margin: auto;
-  height: 40vh;
+  /* padding: 0 1rem; */
+  /* background: red; */
 }
 .carousel__slide {
-  padding: 0px 0.5rem;
+  padding: 0px 1rem;
   background: #fff;
-  height: 30vh;
+  height: 40vh;
   border-radius: 30px 0px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  text-align: left;
   /* width: 18 vw; */
   /* width: 10vw; */
 }
@@ -96,7 +102,7 @@ img {
   border-radius: 30px 0px;
 }
 .carousel__viewport {
-  /* perspective: 2000px; */
+  perspective: 2000px;
 }
 
 .carousel__track {
@@ -110,7 +116,6 @@ img {
 .carousel__slide {
   opacity: 0.5;
   transform: rotateY(-20deg) scale(0.9);
-  padding-top: 1rem;
 }
 
 .carousel__slide--active ~ .carousel__slide {
@@ -120,26 +125,29 @@ img {
 .carousel__slide--prev {
   opacity: 1;
   transform: rotateY(-30deg) scale(0.95);
-  height: 33vh;
-  padding-top: 1rem;
+  height: 45vh;
+
+  /* padding-top: 1rem; */
 }
 
 .carousel__slide--next {
   opacity: 1;
   transform: rotateY(10deg) scale(0.95);
-  height: 33vh;
-  padding-top: 1rem;
+  height: 45vh;
+
+  /* padding-top: 1rem; */
 }
 
 .carousel__slide--active {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
-  height: 35vh;
+  height: 45vh;
   margin: 1.5rem 2rem;
 }
 .interior-titulo {
-  width: 75%;
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
   text-align: left;
+  margin-top: 0.5rem;
 }
 </style>
