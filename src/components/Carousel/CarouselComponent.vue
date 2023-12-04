@@ -86,6 +86,8 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin: auto;
+
   /* width: 18 vw; */
   /* width: 10vw; */
 }
