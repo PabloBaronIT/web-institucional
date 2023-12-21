@@ -66,8 +66,9 @@ export default {
           this.dia = dia.getDate();
           this.getDia(dia.getDay());
           this.getMes(dia.getMonth());
-          this.text = asd.split(" ");
-          this.text = this.text[0].toUpperCase();
+          // this.text = asd.split(" ");
+          // this.text = this.text[0].toUpperCase();
+          this.text = asd.toUpperCase();
 
           this.icono = `https://v5i.tutiempo.net/wi/02/30/${icon}.png`;
         });
