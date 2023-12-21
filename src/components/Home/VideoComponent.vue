@@ -1,25 +1,31 @@
 <template>
   <div class="video-container">
     <div class="tiempo">
-      <img :src="this.icono" alt="imagen" />
+      <img :src="this.icono" alt="imagen" class="icono" />
       <h4>{{ this.nombreDia }}</h4>
-      <h4 style="margin-top: -1rem">{{ this.mes }} {{ this.dia }}</h4>
+      <h4 style="margin-top: -1rem; margin-bottom: -0.5rem">
+        {{ this.mes }} {{ this.dia }}
+      </h4>
 
-      <p>
+      <p style="font-size: 15px">
         Máx:{{ this.tiempo.temperature_max }}°C/Min:
         {{ this.tiempo.temperature_min }}°C
       </p>
       <div class="lin"></div>
-      <p>
+      <p style="font-weight: 300; line-height: 1.2rem">
         <!-- {{ new Date().toLocaleTimeString().slice(0, -6) }} hs <br /> -->
-        {{ this.horas }} : {{ this.minutos }} hs<br />
+        {{ this.horas }}:{{ this.minutos }}hs<br />
         {{ this.text }} <br />HUMEDAD {{ this.tiempo.humidity }} %
       </p>
     </div>
     <div class="texto">
       <!-- <h1 class="trabajando">trabajando</h1> -->
-      <img src="@/assets/Trabajando.png" alt="" class="trabajando" />
-      <h1 class="vos">para vos</h1>
+      <h1 class="vos">Forjando el</h1>
+      <img
+        src="./../../../public/images/fotomanana.png"
+        alt=""
+        class="trabajando"
+      />
     </div>
     <img
       src="@/assets/images/CirculoFondoVideo.svg"
@@ -162,8 +168,8 @@ export default {
   position: absolute;
   right: -10rem;
   bottom: 0;
-  height: 85%;
-  width: 50vw;
+  height: 86%;
+  width: 50%;
   /* z-index: 2; */
 }
 .video-container {
@@ -199,9 +205,9 @@ export default {
 .tiempo {
   position: absolute;
   top: 25%;
-  left: 7vw;
-  width: 12vw;
-  height: 55vh;
+  left: 7%;
+  width: 12%;
+  height: 65%;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -214,8 +220,9 @@ export default {
   /* border: 0.5px solid white; */
 }
 
-.tiempo h3 {
+.tiempo h4 {
   font-weight: 400;
+  font-size: 28px;
   flex-shrink: 0;
 }
 .tiempo p {
@@ -225,12 +232,16 @@ export default {
   font-weight: 400;
 }
 .lin {
-  background: white;
-  height: 1px;
-  width: 98%;
-  margin: auto;
+  background: #fff;
+  height: 2px;
+  width: 92%;
+  /* margin: auto; */
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
+}
+.icono {
+  height: 77px;
+  width: 125px;
 }
 img {
   width: 5vw;
@@ -253,13 +264,15 @@ img {
   -webkit-text-fill-color: transparent;
   /* -webkit-background-clip: text; */
   /* -webkit-text-stroke: 0.01px white; */
+  margin-bottom: 10%;
 }
 .vos {
   color: white;
   font-weight: 400;
-  font-size: 60px;
-  margin-top: -7%;
-  margin-right: -3.5vw;
+  font-size: 70px;
+  font-style: italic;
+  margin-bottom: -3%;
+  margin-right: 7%;
 }
 .trabajando {
   width: 28vw;
