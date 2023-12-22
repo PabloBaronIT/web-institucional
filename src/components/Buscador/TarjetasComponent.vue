@@ -74,6 +74,10 @@ h2 {
 }
 label {
   color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 input {
   background: none;
