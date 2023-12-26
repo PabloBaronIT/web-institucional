@@ -244,14 +244,14 @@ export default {
   width: 125px;
 }
 img {
-  width: 5vw;
-  height: 8vh;
+  width: 5%;
+  height: 8%;
   margin: auto;
 }
 .texto {
   position: absolute;
-  bottom: 7vh;
-  right: 7vw;
+  bottom: 7%;
+  right: 7%;
   text-align: right;
 }
 .trabajando {
@@ -275,7 +275,7 @@ img {
   margin-right: 7%;
 }
 .trabajando {
-  width: 28vw;
-  height: 12vh;
+  width: 100%;
+  height: 12%;
 }
 </style>

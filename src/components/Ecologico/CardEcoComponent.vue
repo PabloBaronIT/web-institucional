@@ -25,34 +25,34 @@ export default {
 .eco-contenedor {
   background: #019939;
   color: white;
-  height: 25vh;
-  width: 88vw;
+  height: 25%;
+  width: 89%;
   margin: auto;
   border-radius: 0px 50px;
-  margin-top: 3vh;
+  margin-top: 3%;
   padding: 1.5rem;
 }
 .medio {
-  width: 70vw;
+  width: 85%;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
 }
 .logo {
   min-height: 130px;
   min-width: 130px;
-  margin-top: -7%;
+  margin-left: 16%;
 }
 .text {
   text-align: left;
-  width: 52vw;
+  width: 78%;
 }
 .text p {
-  font-size: 19px;
-  margin-top: -0.5rem;
+  font-size: 21px;
+  margin-top: -0.7rem;
   font-weight: 200;
 }
 .text h3 {

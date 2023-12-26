@@ -18,9 +18,13 @@
           EL PUEBLO
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item hoverMenu" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Something else here</a>
+          </li>
         </ul>
       </div>
       <div class="dropdown">
@@ -33,9 +37,13 @@
           NUESTRO GOBIERNO
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item hoverMenu" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Something else here</a>
+          </li>
         </ul>
       </div>
       <div class="dropdown">
@@ -48,9 +56,13 @@
           SERVICIO AL VECINO
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item hoverMenu" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Something else here</a>
+          </li>
         </ul>
       </div>
       <div class="dropdown">
@@ -63,9 +75,13 @@
           NOVEDADES
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item hoverMenu" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Something else here</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -140,5 +156,8 @@ export default {
   width: 10%;
   justify-content: space-between;
   /* margin-right: 3rem; */
+}
+.hoverMenu:hover {
+  color: #019939;
 }
 </style>

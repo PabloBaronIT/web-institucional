@@ -79,7 +79,7 @@ export default {
   gap: 25px;
   margin: auto;
   margin-bottom: 10vh;
-  width: 88%;
+  width: 80%;
   /* background: rebeccapurple; */
   /* background: linear-gradient(
     90deg,
@@ -105,7 +105,7 @@ h3 {
 .item {
   border-radius: 20px;
   margin: auto;
-  width: 358px;
+  width: 345px;
   height: 148px;
   display: flex;
   flex-direction: row;

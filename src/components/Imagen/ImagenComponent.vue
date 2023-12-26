@@ -10,9 +10,9 @@
       </h3>
     </div>
     <div class="text-derecho">
-      <h1 class="text" style="margin-left: 2vw">Tus</h1>
+      <h1 class="text" style="margin-left: 6%">Tus</h1>
       <h1 class="grande">gestiones</h1>
-      <h1 class="text" style="margin-top: -7%; margin-left: 4vw">
+      <h1 class="text" style="margin-top: -7%; margin-left: 15%">
         donde estés
       </h1>
     </div>
@@ -66,15 +66,15 @@ export default {
 }
 .text-izquierdo {
   position: absolute;
-  margin-left: 3vw;
-  margin-top: 5vh;
-  width: 30vw;
+  margin-left: 4%;
+  margin-top: 3%;
+  width: 30%;
   z-index: 2;
 }
 .text-derecho {
   position: absolute;
-  right: 4vw;
-  top: 22vh;
+  right: 5%;
+  top: 24%;
   z-index: 2;
 }
 .text {
@@ -94,9 +94,9 @@ export default {
 }
 .muni-linea {
   position: absolute;
-  right: 11vw;
+  right: 11%;
   bottom: 24%;
-  width: 13vw;
+  width: 16.5%;
   height: 10vh;
   display: flex;
   justify-content: center;

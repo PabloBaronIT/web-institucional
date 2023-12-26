@@ -8,14 +8,14 @@
     <Slide v-for="slide in this.novedades" :key="slide">
       <img :src="slide.imagen" alt="imagen" />
 
-      <router-link to="/historia">
-        <div class="interior-titulo">
+      <div class="interior-titulo" style="text-align: left">
+        <router-link to="/historia">
           <p style="font-size: 13px; font-weight: 600">
             {{ new Date().toLocaleDateString() }}
           </p>
           <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
-        </div>
-      </router-link>
+        </router-link>
+      </div>
       <!-- <p>Habilitacion de comercio</p> -->
     </Slide>
     <template #addons>
@@ -58,7 +58,7 @@ export default defineComponent({
             "https://res.cloudinary.com/ddko88otf/image/upload/v1683665000/sxli9cotqczr89ot2frw.png",
         },
         {
-          titulo: "COE Sacanta (Centro de Operaciones de Emergencias",
+          titulo: "COE Sacanta ",
           imagen:
             "https://res.cloudinary.com/ddko88otf/image/upload/v1689024361/bymphlvsesa0vr7t9msk.jpg",
         },
@@ -70,17 +70,18 @@ export default defineComponent({
 
 <style scoped>
 .contenedor {
-  width: 68%;
+  width: 80%;
   height: 100%;
-
   margin: auto;
-  /* padding: 0 1rem; */
+  /* margin-bottom: 3rem; */
+  padding: 0 0;
+  padding: 0 3rem;
   /* background: red; */
 }
 .carousel__slide {
-  padding: 0px 1rem;
+  padding: 0 0.5rem;
   background: #fff;
-  height: 40vh;
+  height: 50vh;
   border-radius: 30px 0px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -99,8 +100,8 @@ a:hover {
   color: #333232;
 }
 img {
-  height: 50%;
-  width: 95%;
+  height: 65%;
+  width: 98%;
   border-radius: 30px 0px;
 }
 .carousel__viewport {
@@ -127,7 +128,7 @@ img {
 .carousel__slide--prev {
   opacity: 1;
   transform: rotateY(-30deg) scale(0.95);
-  height: 45vh;
+  height: 50vh;
 
   /* padding-top: 1rem; */
 }
@@ -135,7 +136,7 @@ img {
 .carousel__slide--next {
   opacity: 1;
   transform: rotateY(10deg) scale(0.95);
-  height: 45vh;
+  height: 50vh;
 
   /* padding-top: 1rem; */
 }
@@ -143,7 +144,7 @@ img {
 .carousel__slide--active {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
-  height: 45vh;
+  height: 50vh;
   margin: 1.5rem 2rem;
 }
 .interior-titulo {

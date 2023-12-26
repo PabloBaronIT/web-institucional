@@ -9,7 +9,7 @@
         <p>
           El Consejo Deliberante de Sacanta está en acción, impulsando el
           progreso en nuestra <br />
-          amada localidad.Unite a nosotros en este emocionante viaje hacia un
+          amada localidad. Unite a nosotros en este emocionante viaje hacia un
           futuro brillante y <br />
           lleno de oportunidades.
         </p>
@@ -27,37 +27,42 @@ export default {
 .eco-contenedor {
   background: #eae9e9;
   color: rgba(255, 255, 255, 0.432);
-  height: 25vh;
-  width: 88vw;
+  /* height: 22%; */
+  width: 89%;
   margin: auto;
   border-radius: 0px 50px;
   /* margin-top: 2vh; */
-  padding-top: 1.5rem;
+  padding: 1rem 0;
   background-image: url("./../../assets/images/CirculoFondo.svg");
   /* opacity: 0.8; */
-  background-repeat: space;
+  background-repeat: repeat;
   background-position: center;
+  background-size: 15%;
+
+  /* overflow: var(); */
 }
 .medio {
-  width: 84vw;
+  width: 92%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-self: center;
+  align-items: center;
   margin: auto;
+  /* background: red; */
 }
 .logo {
-  min-height: 130px;
-  width: 20vw;
-  margin-top: -1rem;
+  min-height: 126px;
+  width: 75%;
+  margin-left: 6%;
+  /* margin-top: -1rem; */
 }
 .text {
   text-align: left;
-  width: 52vw;
+  width: 88%;
 }
 .text p {
-  font-size: 19px;
+  font-size: 21px;
   color: #4b4a49;
   margin-top: -0.5rem;
   font-weight: 400;
