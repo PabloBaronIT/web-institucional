@@ -18,12 +18,18 @@
           EL PUEBLO
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item hoverMenu" href="#">Action</a></li>
           <li>
-            <a class="dropdown-item hoverMenu" href="#">Another action</a>
+            <router-link to="/pueblo/historia" class="link">
+              <a class="dropdown-item hoverMenu" href="#">Nuestra historia</a>
+            </router-link>
+          </li>
+
+          <li><a class="dropdown-item hoverMenu" href="#">Sacanta hoy</a></li>
+          <li>
+            <a class="dropdown-item hoverMenu" href="#">Descubrí Sacanta</a>
           </li>
           <li>
-            <a class="dropdown-item hoverMenu" href="#">Something else here</a>
+            <a class="dropdown-item hoverMenu" href="#">Fiesta Nacional</a>
           </li>
         </ul>
       </div>
@@ -159,5 +165,8 @@ export default {
 }
 .hoverMenu:hover {
   color: #019939;
+}
+.link {
+  text-decoration: none;
 }
 </style>

@@ -68,11 +68,10 @@ h5 {
 .carousel__slide {
   padding: 0.3rem 0.3rem;
   background: #fff;
-  height: 15vh;
-  max-width: 18vw;
+  max-height: 6rem;
+  max-width: 18%;
   border-radius: 20px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
-
   margin: 0.5rem 1.5rem;
   /* width: 18 vw; */
   /* width: 10vw; */
@@ -88,6 +87,7 @@ h5 {
   text-align: center;
   padding: 1.5rem 1.5rem;
   text-decoration: none;
+  text-align: center;
 }
 .interior h5:hover {
   color: #019939;
