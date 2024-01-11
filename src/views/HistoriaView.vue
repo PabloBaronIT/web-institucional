@@ -9,18 +9,18 @@
       <h5>NUESTRA HISTORIA</h5>
       <div class="derecho"></div>
     </div>
-    <Historia />
+    <HistoriaComponentVue />
   </div>
 </template>
 
 <script>
-import Historia from "@/components/Ciudad/LineaComponent.vue";
+import HistoriaComponentVue from "@/components/Historia/HistoriaComponent.vue";
+// import Historia from "@/components/Ciudad/LineaComponent.vue";
 // import Flyer from "@/components/Reutilizar/FlyerComponent.vue";
-
 export default {
   name: "HistoriaView",
   components: {
-    Historia,
+    HistoriaComponentVue,
     // Flyer,
   },
 };
@@ -30,6 +30,7 @@ export default {
 .historia-container {
   padding-top: 10%;
 }
+
 .linea {
   display: flex;
   flex-direction: row;
@@ -40,16 +41,19 @@ export default {
   /* margin-top: 7vh; */
   /* margin-bottom: 7vh; */
 }
+
 .linea h5 {
   font-weight: 600;
   color: #4b4a49;
 }
+
 .izquierdo {
   width: 40%;
   height: 1px;
   background: #4b4a49;
   margin-bottom: 1%;
 }
+
 .derecho {
   height: 1px;
   width: 40%;
