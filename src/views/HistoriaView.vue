@@ -10,6 +10,18 @@
       <div class="derecho"></div>
     </div>
     <HistoriaComponentVue />
+    <div class="textoUltimo">
+      <h4>
+        En cada momento vivido, tejimos el presente de Sacanta. Ahora, con la
+        historia como guía, nos aventuramos a forjar un mañana aún más fuerte.
+      </h4>
+    </div>
+    <div class="volver">
+      <div style="display: flex; flex-direction: row">
+        <h4>Siguiente</h4>
+        <img src="@/assets/images/FlechaDerecha.svg" alt="imagen" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,6 +41,7 @@ export default {
 <style scoped>
 .historia-container {
   padding-top: 10%;
+  position: relative;
 }
 
 .linea {
@@ -59,5 +72,40 @@ export default {
   width: 40%;
   background: #4b4a49;
   margin-bottom: 1%;
+}
+.textoUltimo {
+  text-align: center;
+  width: 80%;
+  /* height: 146px; */
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 13%;
+}
+.textoUltimo h4 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.volver {
+  position: absolute;
+  width: 30%;
+  right: -12%;
+  bottom: -5%;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* padding: 3.5%; */
+  /* bottom: 16%; */
+  /* margin: auto; */
+  /* right: 4%; */
+  /* left: 10%; */
+}
+
+.volver h4 {
+  /* margin-left: 14px; */
+  color: #4b4a49;
+  font-weight: 400;
+  margin-top: 2.5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 </style>

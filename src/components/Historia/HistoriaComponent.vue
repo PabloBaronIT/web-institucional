@@ -61,6 +61,6 @@ export default {
   background: #eae9e9;
   border-radius: 0px 120px;
   margin-top: 5%;
-  padding: 3%;
+  padding: 6% 3%;
 }
 </style>
