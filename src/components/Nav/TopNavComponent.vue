@@ -24,7 +24,11 @@
             </router-link>
           </li>
 
-          <li><a class="dropdown-item hoverMenu" href="#">Sacanta hoy</a></li>
+          <li>
+            <router-link to="/pueblo/sacanta-hoy" class="link">
+              <a class="dropdown-item hoverMenu" href="#">Sacanta hoy</a>
+            </router-link>
+          </li>
           <li>
             <a class="dropdown-item hoverMenu" href="#">Descubrí Sacanta</a>
           </li>
