@@ -30,7 +30,9 @@
             </router-link>
           </li>
           <li>
-            <a class="dropdown-item hoverMenu" href="#">Descubrí Sacanta</a>
+            <router-link to="/pueblo/descubri-sacanta" class="link">
+              <a class="dropdown-item hoverMenu" href="#">Descubrí Sacanta</a>
+            </router-link>
           </li>
           <li>
             <a class="dropdown-item hoverMenu" href="#">Fiesta Nacional</a>

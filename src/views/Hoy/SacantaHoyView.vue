@@ -137,18 +137,17 @@ export default {
   background: #4b4a49;
   margin-bottom: 1%;
 }
-.textoUltimo {
+/* .textoUltimo {
   text-align: center;
   width: 80%;
-  /* height: 146px; */
   margin: auto;
   margin-top: 8%;
   margin-bottom: 13%;
-}
-.textoUltimo h4 {
+} */
+/* .textoUltimo h4 {
   font-weight: 400;
   font-size: 24px;
-}
+} */
 .contenedor-tar {
   width: 90%;
   height: auto;
@@ -172,11 +171,11 @@ export default {
   /* justify-content: center; */
   /* align-content: center; */
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 .tarjetas h1 {
   font-weight: 900;
-  font-size: 70px;
+  font-size: 80px;
   margin-top: -4%;
 }
 .institucional {

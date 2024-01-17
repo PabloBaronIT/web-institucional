@@ -55,6 +55,17 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Hoy/SacantaHoyView.vue"),
   },
+  {
+    path: "/pueblo/descubri-sacanta",
+    name: "descubri-sacanta",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Descubri/DescubriSacantaView.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
