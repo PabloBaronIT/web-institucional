@@ -37,12 +37,16 @@
     </div>
     <div class="volver">
       <div style="display: flex; flex-direction: row">
-        <img src="@/assets/images/FlechaIzquierda.svg" alt="imagen" />
+        <router-link to="/pueblo/historia">
+          <img src="@/assets/images/FlechaIzquierda.svg" alt="imagen" />
+        </router-link>
         <h4>Volver atrás</h4>
       </div>
       <div style="display: flex; flex-direction: row">
         <h4>Siguiente</h4>
-        <img src="@/assets/images/FlechaDerecha.svg" alt="imagen" />
+        <router-link to="/pueblo/descubri-sacanta">
+          <img src="@/assets/images/FlechaDerecha.svg" alt="imagen" />
+        </router-link>
       </div>
     </div>
   </div>
@@ -64,6 +68,7 @@ export default {
       intervalEducacion: "",
     };
   },
+
   components: {
     // HistoriaComponentVue,
     CardBanderaComponent,
@@ -72,6 +77,7 @@ export default {
   created() {
     // setInterval(this.setComercios, 20);
     this.asd();
+    window.scrollTo(0, 0);
   },
   methods: {
     setComercios() {
@@ -116,7 +122,7 @@ export default {
   width: 100%;
   height: auto;
   /* margin-top: 7vh; */
-  /* margin-bottom: 7vh; */
+  margin-bottom: 3%;
 }
 
 .linea h5 {
@@ -125,7 +131,7 @@ export default {
 }
 
 .izquierdo {
-  width: 40%;
+  width: 42%;
   height: 1px;
   background: #4b4a49;
   margin-bottom: 1%;
@@ -133,7 +139,7 @@ export default {
 
 .derecho {
   height: 1px;
-  width: 40%;
+  width: 42%;
   background: #4b4a49;
   margin-bottom: 1%;
 }

@@ -66,6 +66,9 @@ export default {
     // Noticias,
     // cardComponent,
   },
+  created() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 

@@ -19,7 +19,9 @@
     <div class="volver">
       <div style="display: flex; flex-direction: row">
         <h4>Siguiente</h4>
-        <img src="@/assets/images/FlechaDerecha.svg" alt="imagen" />
+        <router-link to="/pueblo/sacanta-hoy/#inicio">
+          <img src="@/assets/images/FlechaDerecha.svg" alt="imagen" />
+        </router-link>
       </div>
     </div>
   </div>
@@ -34,6 +36,9 @@ export default {
   components: {
     HistoriaComponentVue,
     // Flyer,
+  },
+  created() {
+    window.scrollTo(0, 0);
   },
 };
 </script>

@@ -35,7 +35,9 @@
             </router-link>
           </li>
           <li>
-            <a class="dropdown-item hoverMenu" href="#">Fiesta Nacional</a>
+            <router-link to="/pueblo/fiesta-nacional" class="link">
+              <a class="dropdown-item hoverMenu" href="#">Fiesta Nacional</a>
+            </router-link>
           </li>
         </ul>
       </div>

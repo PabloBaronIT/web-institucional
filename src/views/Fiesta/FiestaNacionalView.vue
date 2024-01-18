@@ -1,21 +1,13 @@
 <template>
-  <div class="descubri-container">
+  <div class="fiesta-container">
     <div class="linea">
       <div class="izquierdo"></div>
-      <h5>DESCUBRÍ SACANTA</h5>
+      <h5>FIESTA NACIONAL</h5>
       <div class="derecho"></div>
     </div>
-    <CardDescubriComponent />
-    <div class="linea" style="margin-top: 5%; margin-bottom: 5%">
-      <div class="izquierdo"></div>
-      <h5>LUGARES DE INTERÉS</h5>
-      <div class="derecho"></div>
-    </div>
-    <GridInteresesComponent />
-    <MapStreetViewComponent />
     <div class="volver">
       <div style="display: flex; flex-direction: row">
-        <router-link to="/pueblo/sacanta-hoy">
+        <router-link to="/pueblo/descubri-sacanta">
           <img src="@/assets/images/FlechaIzquierda.svg" alt="imagen" />
         </router-link>
         <h4>Volver atrás</h4>
@@ -30,16 +22,8 @@
   </div>
 </template>
 <script>
-import CardDescubriComponent from "@/components/Descubri/CardDescubriComponent.vue";
-import GridInteresesComponent from "@/components/Intereses/GridInteresesComponent.vue";
-import MapStreetViewComponent from "@/components/Mapa/MapStreetViewComponent.vue";
 export default {
-  name: "DescubriViews",
-  components: {
-    CardDescubriComponent,
-    GridInteresesComponent,
-    MapStreetViewComponent,
-  },
+  name: "FiestaView",
   created() {
     window.scrollTo(0, 0);
   },
@@ -47,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.descubri-container {
+.fiesta-container {
   padding-top: 10%;
   position: relative;
   padding-bottom: 12%;

@@ -11,60 +11,44 @@ const routes = [
   {
     path: "/gobierno",
     name: "gobierno",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/GobiernoView.vue"),
+
+    component: () => import("../views/GobiernoView.vue"),
   },
   {
     path: "/ciudad",
     name: "ciudad",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/CiudadView.vue"),
+
+    component: () => import("../views/CiudadView.vue"),
   },
   {
     path: "/noticias",
     name: "noticias",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/NoticiasView.vue"),
+
+    component: () => import("../views/NoticiasView.vue"),
   },
   {
     path: "/pueblo/historia",
     name: "historia",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: "about" */ "@/views/Historia/HistoriaView.vue"
-      ),
+
+    component: () => import("@/views/Historia/HistoriaView.vue"),
   },
   {
     path: "/pueblo/sacanta-hoy",
     name: "sacanta-hoy",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Hoy/SacantaHoyView.vue"),
+
+    component: () => import("../views/Hoy/SacantaHoyView.vue"),
   },
   {
     path: "/pueblo/descubri-sacanta",
     name: "descubri-sacanta",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: "about" */ "../views/Descubri/DescubriSacantaView.vue"
-      ),
+
+    component: () => import("../views/Descubri/DescubriSacantaView.vue"),
+  },
+  {
+    path: "/pueblo/fiesta-nacional",
+    name: "fiesta-nacional",
+
+    component: () => import("../views/Fiesta/FiestaNacionalView.vue"),
   },
 ];
 

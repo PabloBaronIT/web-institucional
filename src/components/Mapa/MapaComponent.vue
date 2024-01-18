@@ -1,6 +1,6 @@
 <template>
   <div class="mapContenedor">
-    <GMapMap
+    <!-- <GMapMap
       :center="center"
       ref="myMapRef"
       :zoom="10"
@@ -14,7 +14,19 @@
         :draggable="true"
         @dragend="updateMarkerPosition"
       />
-    </GMapMap>
+    </GMapMap> -->
+
+    <!-- mapa de zona de sacanta enbebido -->
+    <iframe
+      height="450"
+      style="border: 0; width: 100%"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCsrNj3q6jmjiavruiFIQIIR-xhWrDb6sQ&center=-31.6657037,-63.0722619
+    &zoom=10"
+    >
+    </iframe>
   </div>
 </template>
 
@@ -32,36 +44,10 @@ export default {
       selectedLocation: null,
       center: { lat: -31.6657037, lng: -63.0722619 },
       markerPosition: { lat: -31.6657037, lng: -63.0722619 },
-      //   updateMarkerPosition: (event) => {
-      //     this.markerPosition.lat = event.latLng.lat();
-      //     this.markerPosition.lng = event.latLng.lng();
-
-      //     this.asd();
-      //   },
     };
   },
-  //   components: { GoogleMap, Marker },
-  created() {
-    // this.$getLocation()
-    //   .then((coordinates) => {
-    //     console.log(coordinates, "coordiantes");
-    //     (this.center.lat = coordinates.lat),
-    //       (this.center.lng = coordinates.lng);
-    //     this.markerPosition.lat = coordinates.lat;
-    //     this.markerPosition.lng = coordinates.lng;
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-  },
-  methods: {
-    // asd() {
-    //   this.setTextInput(
-    //     this.markerPosition.lat.toFixed(7),
-    //     this.markerPosition.lng.toFixed(7)
-    //   );
-    // },
-  },
+  created() {},
+  methods: {},
 };
 </script>
 <style scoped>
