@@ -1,11 +1,14 @@
 <template>
   <nav class="top-nav-container">
+    <i class="bi bi-list burguer" @click="this.setMenu"> </i>
+
     <router-link to="/"
       ><img
         src="@/assets/images/LogoBlancoSacanta.svg"
         alt=""
         class="logo-muni"
     /></router-link>
+    <!-- MENU-BURGUER -->
 
     <div class="nav-botones">
       <div class="dropdown">
@@ -111,6 +114,50 @@
       </a>
     </div>
   </nav>
+  <div class="menu" v-if="this.menu">
+    <div
+      class="item-menu"
+      @click="this.setSubMenu(index)"
+      v-for="(item, index) in this.ListMenu"
+      :key="index"
+    >
+      <h6>
+        {{ item.titulo }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+        >
+          <path
+            d="M2.1875 3.59375L5 6.40625L7.8125 3.59375"
+            stroke="#3E3E3E"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </h6>
+      <div
+        class="item-subMenu"
+        v-if="this.open === true && this.itemSelect === index"
+      >
+        <router-link
+          :to="item.link"
+          class="link"
+          @click="this.setMenu"
+          v-for="(item, index) in item.subtitulos"
+          :key="index"
+        >
+          <h6>
+            {{ item.titulo }}
+          </h6>
+        </router-link>
+      </div>
+      <div class="linea-menu"></div>
+    </div>
+  </div>
   <!-- <div class="colores">
     <div class="red"></div>
     <div class="green"></div>
@@ -119,9 +166,74 @@
     <div class="red"></div>
   </div> -->
 </template>
+
 <script>
 export default {
   name: "topNavComponent",
+  data() {
+    return {
+      menu: false,
+      open: false,
+      itemSelect: null,
+      ListMenu: [
+        {
+          titulo: "EL PUEBLO",
+          subtitulos: [
+            { titulo: "Nuestra Historia", link: "/pueblo/historia" },
+            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+
+            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+
+            { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
+          ],
+        },
+        {
+          titulo: "NUESTRO GOBIERNO",
+          subtitulos: [
+            { titulo: "Nuestra Historia", link: "/pueblo/historia" },
+            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+
+            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+
+            { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
+          ],
+        },
+        {
+          titulo: "SERVICIO AL VECINO",
+          subtitulos: [
+            { titulo: "Nuestra Historia", link: "/pueblo/historia" },
+            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+
+            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+
+            { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
+          ],
+        },
+        {
+          titulo: "NOVEDADES",
+          subtitulos: [
+            { titulo: "Nuestra Historia", link: "/pueblo/historia" },
+            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+
+            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+
+            { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
+          ],
+        },
+      ],
+    };
+  },
+  methods: {
+    setMenu() {
+      this.menu = !this.menu;
+    },
+    setSubMenu(index) {
+      console.log("soy el indice");
+      this.itemSelect = index;
+      this.open = !this.open;
+      // this.ListMenu[index].open = true;
+    },
+  },
 };
 </script>
 
@@ -176,5 +288,92 @@ export default {
 }
 .link {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .burguer {
+    /* visibility: visible; */
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 0px 0%;
+    /* margin-left: 5%; */
+  }
+  .top-nav-container {
+    height: 56px;
+    width: 100%;
+    position: relative;
+    padding: 0% 2%;
+    z-index: 5;
+  }
+  .logo-muni {
+    width: 112px;
+    margin-left: -50%;
+  }
+  .nav-botones {
+    display: none;
+  }
+  .redes-container {
+    width: 25%;
+  }
+  .redes {
+    width: 23px;
+    height: 23px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 6%;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    z-index: 15;
+  }
+  .menu h6 {
+    color: #3e3e3e;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .item-menu {
+    /* border-bottom: 1px solid #00c3a8; */
+    /* border-bottom-color: linear-gradient(
+      90deg,
+      #00c3a8 0.01%,
+      #ffb900 54.81%,
+      #ff2745 104.96%
+    ); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 2% 2%;
+  }
+  .linea-menu {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      #00c3a8 0.01%,
+      #ffb900 54.81%,
+      #ff2745 104.96%
+    );
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+  }
+  .item-subMenu {
+    /* display: block; */
+    position: relative;
+    /* top: 6%; */
+    padding: 0% 5%;
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+  .item-subMenu h6 {
+    margin-bottom: 2%;
+  }
 }
 </style>

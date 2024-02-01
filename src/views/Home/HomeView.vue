@@ -2,15 +2,21 @@
   <div>
     <videoComponent />
     <TarjetasComponent />
+    <div class="masGestiones">
+      <p>Ingresá aquí para más gestiones</p>
+    </div>
     <ImagenComponent />
     <CardEcoComponent />
+    <PromocionesComponent />
     <div class="linea">
       <div class="izquierdo"></div>
       <h5>DESCUBRÍ NUESTROS PROGRAMA</h5>
       <div class="derecho"></div>
     </div>
     <GridProgramasComponent />
-    <CardConsejoComponent />
+    <div class="consejo">
+      <CardConsejoComponent />
+    </div>
     <div class="linea">
       <div class="izquierdo"></div>
       <h5>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h5>
@@ -42,6 +48,8 @@ import GridProgramasComponent from "@/components/Programas/GridProgramasComponen
 import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
 import TarjetasComponent from "@/components/Buscador/TarjetasComponent.vue";
 import CardConsejoComponent from "@/components/Consejo/CardConsejoComponent.vue";
+import PromocionesComponent from "@/components/Promociones/PromocionesComponent.vue";
+
 // import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 // import cardComponent from "@/components/Home/CardComponent.vue";
 // import ServiciosMunicipales from "@/components/Home/ServiciosMunicipalesComponent.vue";
@@ -59,7 +67,9 @@ export default {
     GridProgramasComponent,
     CarouselComponent,
     TarjetasComponent,
-    // btnServiciosComponent,
+    PromocionesComponent,
+    // import PromocionesComponent from "@/components/Promociones/PromocionesComponent.vue";
+
     // ServiciosMunicipales,
     // MapComponent,
     // Programa,
@@ -123,5 +133,53 @@ export default {
   height: 60vh;
   /* background-color: rebeccapurple; */
   align-items: center;
+}
+.masGestiones {
+  display: none;
+}
+@media (max-width: 500px) {
+  .linea {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .linea h5 {
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .izquierdo {
+    width: 30%;
+  }
+  .derecho {
+    width: 30%;
+  }
+  .masGestiones {
+    border-radius: 40px;
+    background: linear-gradient(
+      90deg,
+      #019939 0.18%,
+      #ffcc03 52.79%,
+      #e52320 107.64%
+    );
+    max-height: 29px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-top: 1%;
+    margin-top: 5%;
+  }
+  .masGestiones p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+  }
+  .consejo {
+    display: none;
+  }
 }
 </style>

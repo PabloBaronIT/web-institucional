@@ -278,4 +278,20 @@ img {
   width: 100%;
   height: 12%;
 }
+@media (max-width: 500px) {
+  .tiempo,
+  .texto,
+  .circulo,
+  .linea {
+    display: none;
+  }
+  .video-container {
+    border-radius: 0px 0px 16px 0px;
+  }
+  .gif {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 16px 0px;
+  }
+}
 </style>

@@ -121,4 +121,46 @@ export default {
   );
   bottom: 0;
 }
+@media (max-width: 500px) {
+  .contenedor-imagen {
+    margin-top: 5%;
+    width: 100%;
+    height: 171px;
+    background-size: cover;
+    border-radius: 16px 0px 16px 0px;
+  }
+  .capa {
+    height: 171px;
+    width: 100%;
+
+    border-radius: 0px 0px 16px 0px;
+  }
+
+  .text-izquierdo h3 {
+    font-size: 8px;
+  }
+  .grande {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .muni-linea {
+    border-radius: 16px;
+    background: var(
+      --Degrade-VA,
+      linear-gradient(106deg, #00c3a8 0%, #ffb900 101.17%)
+    );
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 23px;
+    right: 7%;
+  }
+  .muni-linea img {
+    width: 50%;
+  }
+  .linea-b {
+    visibility: hidden;
+  }
+}
 </style>

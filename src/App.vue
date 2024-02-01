@@ -43,7 +43,22 @@ export default {
   background: #f5f5f5;
   /* width: 100%; */
 }
+@media (max-width: 500px) {
+  #app {
+    width: 100vw;
+    height: auto;
+    font-family: "Source Sans 3", sans-serif;
 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #ffffff;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
 /* nav {
   padding: 30px;
 }

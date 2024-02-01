@@ -2,7 +2,7 @@
   <div class="eco-contenedor">
     <div class="medio">
       <div>
-        <img src="@/assets/images/EcoLogo.svg" alt="" class="logo" />
+        <img src="@/assets/images/EcoLogoMobile.svg" alt="" class="logo" />
       </div>
       <div class="text">
         <h3>¡POR UN PLANETA MÁS VERDE!</h3>
@@ -23,40 +23,81 @@ export default {
 </script>
 <style scoped>
 .eco-contenedor {
-  background: #019939;
+  background: #3bae49;
   color: white;
-  height: 25%;
-  width: 89%;
+  /* height: 5%; */
+  max-height: 169px;
+  width: 100%;
   margin: auto;
-  border-radius: 0px 50px;
   margin-top: 3%;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .medio {
-  width: 85%;
+  width: 78%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  /* background: red; */
 }
 .logo {
   min-height: 130px;
   min-width: 130px;
-  margin-left: 16%;
+  /* margin-left: 16%; */
 }
 .text {
   text-align: left;
-  width: 78%;
+  width: 85%;
+  margin-top: 2%;
 }
 .text p {
-  font-size: 21px;
-  margin-top: -0.7rem;
-  font-weight: 200;
+  font-size: 19px;
+  /* margin-top: -0.7rem; */
+  font-weight: 400;
 }
 .text h3 {
   font-weight: 700;
   letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+  .eco-contenedor {
+    height: 62px;
+    padding: 0px;
+    padding-left: 2%;
+    padding-top: 1%;
+  }
+  .medio {
+    width: 100%;
+    height: 62px;
+    justify-content: left;
+  }
+  .text {
+    padding: 0% 3%;
+    height: 62px;
+    width: 95%;
+  }
+  .text h3 {
+    font-weight: 700;
+    font-size: 10px;
+    margin-bottom: -0.5%;
+  }
+  .text p {
+    font-size: 8px;
+    /* margin-top: -0.7rem; */
+    font-weight: 400;
+  }
+  .logo {
+    min-height: 45px;
+    min-width: 45px;
+    margin-bottom: 15%;
+  }
+  .eco-contenedor {
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 8px;
+  }
 }
 </style>
