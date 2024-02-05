@@ -27,20 +27,20 @@ export default {
   color: white;
   /* height: 5%; */
   max-height: 169px;
-  width: 100%;
+  width: 90%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 2%;
   padding: 1rem;
+  border-radius: 0px 60px;
 }
 .medio {
-  width: 78%;
+  width: 77%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  /* background: red; */
 }
 .logo {
   min-height: 130px;
@@ -49,7 +49,7 @@ export default {
 }
 .text {
   text-align: left;
-  width: 85%;
+  width: 80%;
   margin-top: 2%;
 }
 .text p {

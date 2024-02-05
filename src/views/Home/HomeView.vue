@@ -22,9 +22,9 @@
       <h5>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h5>
       <div class="derecho"></div>
     </div>
-    <div class="carouselNoticias">
-      <CarouselComponent />
-    </div>
+    <!-- <div class="carouselNoticias"> -->
+    <CarouselComponent />
+    <!-- </div> -->
 
     <!-- <cardComponent /> -->
     <!-- <btnServiciosComponent /> -->
@@ -130,8 +130,11 @@ export default {
 }
 
 .carouselNoticias {
-  height: 60vh;
-  /* background-color: rebeccapurple; */
+  /* height: 60vh; */
+  background-color: rebeccapurple;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 3%;
   align-items: center;
 }
 .masGestiones {

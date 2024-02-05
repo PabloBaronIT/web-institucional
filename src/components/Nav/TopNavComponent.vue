@@ -289,6 +289,9 @@ export default {
 .link {
   text-decoration: none;
 }
+.burguer {
+  display: none;
+}
 @media (max-width: 500px) {
   .burguer {
     /* visibility: visible; */

@@ -110,7 +110,8 @@ input {
         </slide>
 
         <template #addons>
-          <!-- <navigation /> -->
+          <!-- <Navigation /> -->
+          <Pagination />
         </template>
       </carousel>
     </div>
@@ -136,12 +137,13 @@ input {
   </div>
 </template>
 <script>
-import { Carousel, Slide } from "vue3-carousel";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
 export default {
   name: "TarjetasComponent",
   components: {
     Carousel,
     Slide,
+    Pagination,
     // Navigation,
   },
   data() {
@@ -195,21 +197,20 @@ export default {
 <style scoped>
 .contenedor {
   position: relative;
-  background: #fff;
-  color: rgba(255, 255, 255, 0.432);
+  background: #eae9e9;
+  /* color: rgba(255, 255, 255, 0.432); */
   /* height: 100%; */
   width: 86%;
   margin: auto;
   margin-top: 3%;
   padding-top: 2rem;
-  background-image: url("./../../assets/images/CirculoFondoGrandes.svg");
+  background-image: url("./../../assets/images/Frame.svg");
   /* opacity: 0.2; */
   background-repeat: space;
   background-position: center;
   text-align: center;
   overflow: hidden;
   border-radius: 50px 0px;
-
   /* filter: blur(25px); */
 }
 h1 {
@@ -223,7 +224,7 @@ h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 8%;
+  height: 7%;
   background: linear-gradient(
     90deg,
     #019939 0.18%,
@@ -231,7 +232,7 @@ h1 {
     #e52320 107.64%
   );
   text-align: center;
-  padding: 2%;
+  /* padding: 2%; */
 }
 .top h6 {
   visibility: hidden;
@@ -245,7 +246,7 @@ h1 {
 .buscador {
   position: absolute;
   width: 30%;
-  height: 8%;
+  height: 7%;
   background: #019939;
   top: 0;
   right: 0;
@@ -298,6 +299,7 @@ h5 {
 
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   height: 100%;
+  transition: background 0.8s ease-in-out;
 }
 .card-body {
   background: white;
@@ -318,7 +320,8 @@ h5 {
   min-height: 30px;
 }
 .cardGestiones:hover {
-  background: linear-gradient(180deg, #019939 4.26%, #ffcc03 126.04%);
+  background: linear-gradient(#019939 4.26%, #ffcc03 126.04%);
+  /* background: #019939; */
   /* width: 110%; */
   /* position: relative; */
 }
@@ -349,7 +352,7 @@ h5 {
 }
 
 .carousel-mobile {
-  visibility: hidden;
+  display: none;
 }
 @media (max-width: 500px) {
   .top {
@@ -365,6 +368,7 @@ h5 {
     width: 90%;
     height: 130px;
     border-radius: 15px 0px 0px 0px;
+    /* background: #d3d3d342; */
     padding-bottom: 3rem;
     position: relative;
   }
@@ -380,7 +384,7 @@ h5 {
     font-weight: 700;
   }
   .carousel-mobile {
-    visibility: visible;
+    display: block;
     width: 100%;
     height: auto;
     margin-top: -1rem;
@@ -435,6 +439,11 @@ h5 {
   .interior img {
     height: 34px;
     width: 34px;
+  }
+  .carousel_pagination {
+    margin: 0;
+  }
+  .carousel_pagination-buttom {
   }
 }
 </style>

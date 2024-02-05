@@ -1,8 +1,8 @@
 <template>
   <Carousel
-    :itemsToShow="3.5"
+    :itemsToShow="3.2"
     :wrapAround="true"
-    :transition="500"
+    :transition="600"
     class="contenedor"
   >
     <Slide v-for="slide in this.novedades" :key="slide">
@@ -10,7 +10,7 @@
 
       <div class="interior-titulo" style="text-align: left">
         <router-link to="/historia">
-          <p style="font-size: 13px; font-weight: 600">
+          <p class="fecha">
             {{ new Date().toLocaleDateString() }}
           </p>
           <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
@@ -26,12 +26,11 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 import "vue3-carousel/dist/carousel.css";
 
-export default defineComponent({
+export default {
   name: "CarouselComponent",
   components: {
     Carousel,
@@ -43,39 +42,39 @@ export default defineComponent({
     return {
       novedades: [
         {
-          titulo: "Código Urbano Sacanta.",
+          titulo: "Reunión con el Pte. de la Agencia Córdoba Turismo.",
           imagen:
             "https://res.cloudinary.com/ddko88otf/image/upload/v1683665000/sxli9cotqczr89ot2frw.png",
         },
         {
-          titulo: "COE Sacanta (Centro de Operaciones de Emergencias.)",
+          titulo: "50° Fiesta Nacional de la Familia Piamontesa",
           imagen:
             "https://res.cloudinary.com/ddko88otf/image/upload/v1689024361/bymphlvsesa0vr7t9msk.jpg",
         },
         {
-          titulo: "Concurso de precio ENHOSA-Red de agua Potable Sacanta.",
+          titulo: "Entrega de presente de primer niño nacido en 2024.",
           imagen:
             "https://res.cloudinary.com/ddko88otf/image/upload/v1683665000/sxli9cotqczr89ot2frw.png",
         },
         {
-          titulo: "COE Sacanta ",
+          titulo: "Reunión con el Pte. de la Agencia Córdoba Turismo. ",
           imagen:
             "https://res.cloudinary.com/ddko88otf/image/upload/v1689024361/bymphlvsesa0vr7t9msk.jpg",
         },
       ],
     };
   },
-});
+};
 </script>
 
 <style scoped>
 .contenedor {
-  width: 80%;
+  width: 70%;
   height: 100%;
   margin: auto;
-  /* margin-bottom: 3rem; */
-  padding: 0 0;
-  padding: 0 3rem;
+  margin-bottom: 5%;
+  /* padding: 0 0; */
+  padding: 0 2rem;
   /* background: red; */
 }
 .carousel__slide {
@@ -88,6 +87,7 @@ export default defineComponent({
   flex-direction: column;
   text-align: left;
   margin: auto;
+  /* padding-left: 1rem; */
 
   /* width: 18 vw; */
   /* width: 10vw; */
@@ -151,6 +151,51 @@ img {
   width: 100%;
   /* margin: auto; */
   text-align: left;
+  padding-left: 1rem;
   margin-top: 0.5rem;
+}
+.fecha {
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .contenedor {
+    height: 195px;
+    width: 100%;
+  }
+  /* .slide {
+    height: 100%;
+    width: 100%;
+    display: block;
+  } */
+  /* .carousel {
+    height: 195px;
+    width: 100%;
+  } */
+  .carousel__slide {
+    height: 142px;
+    padding: 0;
+    border-radius: 16px;
+  }
+  /* .carousel__slide--active {
+    height: 142px;
+    margin: 1.5rem 2.5rem;
+    padding-top: 3px;
+  } */
+
+  .interior-titulo p {
+    font-size: 8px;
+  }
+  .interior-titulo {
+    padding-left: 0.5rem;
+  }
+  img {
+    height: 45%;
+    width: 95%;
+    border-radius: 16px;
+  }
+  .navegation {
+    display: none;
+  }
 }
 </style>

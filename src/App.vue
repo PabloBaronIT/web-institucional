@@ -45,7 +45,7 @@ export default {
 }
 @media (max-width: 500px) {
   #app {
-    width: 100vw;
+    width: 100%;
     height: auto;
     font-family: "Source Sans 3", sans-serif;
 

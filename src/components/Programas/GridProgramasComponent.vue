@@ -61,13 +61,69 @@
       </router-link>
     </div>
   </div>
+  <div class="gridMobile">
+    <Carousel :itemsToShow="1.2" :wrapAround="true" :transition="600">
+      <Slide v-for="slide in this.datos" :key="slide">
+        <img :src="slide.imagen" alt="imagen" />
+
+        <div>
+          <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
+        </div>
+        <!-- <p>Habilitacion de comercio</p> -->
+      </Slide>
+      <!-- <template #addons> -->
+      <!-- <Navigation /> -->
+      <!-- <Pagination /> -->
+      <!-- </template> -->
+    </Carousel>
+  </div>
 </template>
 <script>
+import { Carousel, Slide } from "vue3-carousel";
+
 export default {
   name: "GridProgramasComponent",
-  components: {},
   data() {
-    return {};
+    return {
+      datos: [
+        {
+          titulo: "PRODUCCION",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+        {
+          titulo: "OBRAS PUBLICAS",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+        {
+          titulo: "AMBIENTE",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+        {
+          titulo: "CULTURA",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+        {
+          titulo: "EDUCACION",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+        {
+          titulo: "EMPLEO",
+          imagen:
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1706293915/Frame_ljki0p.png",
+        },
+      ],
+    };
+  },
+  components: {
+    Carousel,
+    Slide,
+    // Pagination,
+    // Navigation,
   },
 };
 </script>
@@ -78,16 +134,19 @@ export default {
   grid-template-rows: repeat(2, 1fr); /* Crea 3 filas de altura fija de 100px */
   gap: 25px;
   margin: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 5%;
   width: 80%;
   /* background: rebeccapurple; */
   /* background: linear-gradient(
-    90deg,
-    #019939 -3.32%,
-    #ffcc03 49.27%,
-    #e52320 110.14%
-  ); */
+      90deg,
+      #019939 -3.32%,
+      #ffcc03 49.27%,
+      #e52320 110.14%
+    ); */
   /* grid-auto-rows: minmax(100px, auto); */
+}
+.gridMobile {
+  display: none;
 }
 img {
   max-width: 50%;
@@ -95,12 +154,12 @@ img {
 }
 h3 {
   font-weight: 900;
-  /* font-size: 30px; */
+  font-size: 24px;
   font-style: normal;
   letter-spacing: 1.5px;
 }
 .titulo {
-  width: 50%;
+  width: 57%;
 }
 .item {
   border-radius: 20px;
@@ -112,7 +171,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   color: white;
-  /* padding-left: 2rem; */
+  padding-left: 1rem;
 }
 a {
   text-decoration: none;
@@ -128,5 +187,84 @@ a {
 .item2,
 .item5 {
   background: linear-gradient(92deg, #ffcc03 1.51%, #e52320 109.53%);
+}
+
+@media (max-width: 500px) {
+  .grid {
+    display: none;
+    width: 100%;
+  }
+  .contenedor {
+    /* width: 100%; */
+    /* height: 121px; */
+    /* margin: auto; */
+    /* margin-bottom: 10%; */
+    /* padding: 0 0; */
+    /* padding: 0 2rem; */
+    background: red;
+  }
+  .gridMobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* margin-top: -20rem; */
+
+    /* margin-bottom: 10%; */
+    /* padding: 0 0; */
+    padding: 0 2rem;
+    /* background: red; */
+  }
+  .carousel {
+    width: 100%;
+    height: 130px;
+    /* margin: auto; */
+    /* padding: 1rem; */
+    /* background: rebeccapurple; */
+    /* padding-left: 3rem; */
+    /* padding-right: 3rem; */
+  }
+  .carousel__slide {
+    padding: 0.3rem 0.3rem;
+    background: #fff;
+    height: 115px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(
+      97deg,
+      #019939 5.33%,
+      #ffcc03 62.67%,
+      #e52320 122.44%
+    );
+    align-items: center;
+    /* width: 18 vw; */
+    /* width: 10vw; */
+  }
+  .carousel__slide p {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+  .carousel__slide:hover {
+    background: linear-gradient(180deg, #019939 4.26%, #ffcc03 126.04%);
+  }
+  .interior {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 17px;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  .interior h5:hover {
+    color: #019939;
+  }
 }
 </style>
