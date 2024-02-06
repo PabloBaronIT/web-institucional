@@ -180,9 +180,9 @@ export default {
           titulo: "EL PUEBLO",
           subtitulos: [
             { titulo: "Nuestra Historia", link: "/pueblo/historia" },
-            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+            { titulo: "Sacanta Hoy", link: "/pueblo/sacanta-hoy" },
 
-            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+            { titulo: "Descubrí Sacanta", link: "/pueblo/descubri-sacanta" },
 
             { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
           ],
@@ -191,9 +191,9 @@ export default {
           titulo: "NUESTRO GOBIERNO",
           subtitulos: [
             { titulo: "Nuestra Historia", link: "/pueblo/historia" },
-            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+            { titulo: "Sacanta Hoy", link: "/pueblo/sacanta-hoy" },
 
-            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+            { titulo: "Descubrí Sacanta", link: "/pueblo/descubri-sacanta" },
 
             { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
           ],
@@ -202,9 +202,9 @@ export default {
           titulo: "SERVICIO AL VECINO",
           subtitulos: [
             { titulo: "Nuestra Historia", link: "/pueblo/historia" },
-            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+            { titulo: "Sacanta Hoy", link: "/pueblo/sacanta-hoy" },
 
-            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+            { titulo: "Descubrí Sacanta", link: "/pueblo/descubri-sacanta" },
 
             { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
           ],
@@ -213,9 +213,9 @@ export default {
           titulo: "NOVEDADES",
           subtitulos: [
             { titulo: "Nuestra Historia", link: "/pueblo/historia" },
-            { titulo: "Luque Hoy", link: "/pueblo/luque-hoy" },
+            { titulo: "Sacanta Hoy", link: "/pueblo/sacanta-hoy" },
 
-            { titulo: "Descubrí Luque", link: "/pueblo/descubri-luque" },
+            { titulo: "Descubrí Sacanta", link: "/pueblo/descubri-sacanta" },
 
             { titulo: "Fiesta Nacional", link: "/pueblo/fiesta-nacional" },
           ],

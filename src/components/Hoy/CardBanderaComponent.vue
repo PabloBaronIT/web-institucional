@@ -1,7 +1,12 @@
 <template>
   <div class="contenedor">
     <div class="img">
-      <img src="@/../public/images/bandera.png" alt="" />
+      <img src="@/../public/images/bandera.png" alt="" class="banderaweb" />
+      <img
+        src="@/../public/images/banderamobile.png"
+        alt=""
+        class="banderamobile"
+      />
     </div>
     <div class="text">
       <h4>
@@ -28,6 +33,9 @@
   height: 325px;
   border-radius: 0px 0px 0px 120px;
 }
+.banderamobile {
+  display: none;
+}
 .img {
   height: auto;
   width: 42%;
@@ -50,5 +58,32 @@ img {
   font-weight: 400;
   color: #4b4a49;
   line-height: normal;
+}
+@media (max-width: 500px) {
+  .banderaweb {
+    display: none;
+  }
+  .contenedor {
+    width: 100%;
+    height: 101px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  .banderamobile {
+    display: block;
+  }
+  img {
+    height: 101px;
+  }
+  .text {
+    border-radius: 0;
+    padding: 2%;
+  }
+  .text h4 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 </style>

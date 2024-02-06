@@ -10,15 +10,15 @@
     <div class="contenedor-tar">
       <div class="tarjetas">
         <h3>HABITANTES</h3>
-        <h1>3134</h1>
+        <h1 class="tarjetas-h1">3134</h1>
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE URBANA</h3>
-        <h1 style="font-size: 48px">173,88 Has.</h1>
+        <h1 class="huno">173,88 Has.</h1>
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE RURAL</h3>
-        <h1 style="font-size: 48px">41.826,12 Has.</h1>
+        <h1 class="huno">41.826,12 Has.</h1>
       </div>
     </div>
     <div class="institucional">
@@ -159,7 +159,7 @@ export default {
   height: auto;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -179,10 +179,15 @@ export default {
   color: white;
   padding-top: 1.5rem;
 }
-.tarjetas h1 {
+.tarjetas-h1 {
   font-weight: 900;
   font-size: 80px;
   margin-top: -4%;
+}
+.huno {
+  font-weight: 900;
+
+  font-size: 48px;
 }
 .institucional {
   display: flex;
@@ -225,5 +230,82 @@ export default {
   margin-top: 2.5vh;
   margin-left: 1vw;
   margin-right: 1vw;
+}
+@media (max-width: 500px) {
+  .hoy-container {
+    padding-top: 5%;
+    height: auto;
+    padding-bottom: 16%;
+  }
+  .linea {
+    /* text-align: center;
+     margin-top: 3%;
+    /* margin-bottom: 3%; */
+    /* display: none; */
+    margin-top: 0;
+  }
+  .contenedor-tar {
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  .volver {
+    width: 100%;
+    /* bottom: 0; */
+  }
+  .volver h4 {
+    display: none;
+  }
+  .volver img {
+    width: 32px;
+    height: 32px;
+  }
+  .linea h5 {
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .izquierdo {
+    width: 30%;
+  }
+  .derecho {
+    width: 30%;
+  }
+  .tarjetas {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    padding: 8.584px 10px;
+  }
+  .tarjetas h3 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .tarjetas-h1 {
+    font-size: 19px;
+  }
+  .huno {
+    font-size: 16px;
+  }
+  .comercio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .comercio h1 {
+    color: #4b4a49;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .comercio h3 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+  }
+  .institucional {
+    /* margin-bottom: 20%; */
+  }
 }
 </style>

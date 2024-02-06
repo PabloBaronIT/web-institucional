@@ -65,9 +65,9 @@ p {
   height: 628px;
   margin: auto;
 }
-@media (max-width: 800px) {
-  .mapContenedor {
-    padding-right: 20%;
+@media (max-width: 500px) {
+  iframe {
+    height: 157px;
   }
 }
 </style>

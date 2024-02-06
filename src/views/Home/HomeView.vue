@@ -6,8 +6,8 @@
       <p>Ingresá aquí para más gestiones</p>
     </div>
     <ImagenComponent />
-    <CardEcoComponent />
     <PromocionesComponent />
+    <CardEcoComponent />
     <div class="linea">
       <div class="izquierdo"></div>
       <h5>DESCUBRÍ NUESTROS PROGRAMA</h5>
@@ -23,8 +23,9 @@
       <div class="derecho"></div>
     </div>
     <!-- <div class="carouselNoticias"> -->
+
     <CarouselComponent />
-    <!-- </div> -->
+    <!--  </div> -->
 
     <!-- <cardComponent /> -->
     <!-- <btnServiciosComponent /> -->
@@ -34,7 +35,7 @@
     <!-- <Programa /> -->
     <!-- <Programa /> -->
     <!-- </div> -->
-    <Noticias />
+    <!-- <Noticias /> -->
   </div>
 </template>
 
@@ -45,10 +46,10 @@ import videoComponent from "@/components/Home/VideoComponent";
 import ImagenComponent from "@/components/Imagen/ImagenComponent.vue";
 import CardEcoComponent from "@/components/Ecologico/CardEcoComponent.vue";
 import GridProgramasComponent from "@/components/Programas/GridProgramasComponent.vue";
+import PromocionesComponent from "@/components/Promociones/PromocionesComponent.vue";
 import CarouselComponent from "@/components/Carousel/CarouselComponent.vue";
 import TarjetasComponent from "@/components/Buscador/TarjetasComponent.vue";
 import CardConsejoComponent from "@/components/Consejo/CardConsejoComponent.vue";
-import PromocionesComponent from "@/components/Promociones/PromocionesComponent.vue";
 
 // import btnServiciosComponent from "@/components/Home/BtnServiciosComponent.vue";
 // import cardComponent from "@/components/Home/CardComponent.vue";
@@ -61,13 +62,13 @@ export default {
   name: "HomeView",
   components: {
     videoComponent,
+    TarjetasComponent,
+    ImagenComponent,
     CardEcoComponent,
     CardConsejoComponent,
-    ImagenComponent,
     GridProgramasComponent,
-    CarouselComponent,
-    TarjetasComponent,
     PromocionesComponent,
+    CarouselComponent,
     // import PromocionesComponent from "@/components/Promociones/PromocionesComponent.vue";
 
     // ServiciosMunicipales,

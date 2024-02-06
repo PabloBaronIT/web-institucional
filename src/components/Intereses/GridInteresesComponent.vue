@@ -50,6 +50,7 @@ export default {
   margin: auto;
   margin-bottom: 10vh;
   width: 70%;
+  margin-top: 5%;
   /* background: green; */
 }
 .item {
@@ -97,16 +98,31 @@ export default {
 .imagen-hover:hover {
   opacity: 1; /* Hacer visible la imagen al hacer hover sobre el contenedor */
 }
-.texto:hover {
-  /* background: white; */
-  /* font-size: 90px; */
-  /* font-weight: bold; */
-  /* background-clip: text; */
-  /* -webkit-text-stroke-width: 0.2px; */
-  /* -webkit-text-stroke-color: white; */
-  /* -webkit-text-fill-color: transparent;
+/* .texto:hover { */
+/* background: white; */
+/* font-size: 90px; */
+/* font-weight: bold; */
+/* background-clip: text; */
+/* -webkit-text-stroke-width: 0.2px; */
+/* -webkit-text-stroke-color: white; */
+/* -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px black; */
-  /* margin-bottom: 10%; */
+/* margin-bottom: 10%; */
+/* } */
+@media (max-width: 500px) {
+  .contenedor-intereses {
+    width: 100%;
+    gap: 15px;
+    padding: 0 2%;
+  }
+  .item {
+    min-width: 100%;
+    min-height: 80px;
+    padding: 0;
+  }
+  .texto {
+    font-size: 15px;
+  }
 }
 </style>

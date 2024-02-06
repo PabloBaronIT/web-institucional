@@ -6,13 +6,13 @@
       <div class="derecho"></div>
     </div>
     <CardDescubriComponent />
-    <div class="linea" style="margin-top: 5%; margin-bottom: 5%">
+    <div class="linea">
       <div class="izquierdo"></div>
       <h5>LUGARES DE INTERÉS</h5>
       <div class="derecho"></div>
     </div>
     <GridInteresesComponent />
-    <MapStreetViewComponent />
+    <!-- <MapStreetViewComponent /> -->
     <div class="volver">
       <div style="display: flex; flex-direction: row">
         <router-link to="/pueblo/sacanta-hoy">
@@ -32,13 +32,13 @@
 <script>
 import CardDescubriComponent from "@/components/Descubri/CardDescubriComponent.vue";
 import GridInteresesComponent from "@/components/Intereses/GridInteresesComponent.vue";
-import MapStreetViewComponent from "@/components/Mapa/MapStreetViewComponent.vue";
+// import MapStreetViewComponent from "@/components/Mapa/MapStreetViewComponent.vue";
 export default {
   name: "DescubriViews",
   components: {
     CardDescubriComponent,
     GridInteresesComponent,
-    MapStreetViewComponent,
+    // MapStreetViewComponent,
   },
   created() {
     window.scrollTo(0, 0);
@@ -98,5 +98,37 @@ export default {
   margin-top: 2.5vh;
   margin-left: 1vw;
   margin-right: 1vw;
+}
+@media (max-width: 500px) {
+  .descubri-container {
+    padding-top: 5%;
+  }
+  .linea {
+    /* text-align: center;
+     margin-top: 3%; 
+    /* margin-bottom: 3%; */
+    /* display: none; */
+    margin-top: 0;
+  }
+  .volver {
+    width: 100%;
+  }
+  .volver h4 {
+    display: none;
+  }
+  .volver img {
+    width: 32px;
+    height: 32px;
+  }
+  .linea h5 {
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .izquierdo {
+    width: 30%;
+  }
+  .derecho {
+    width: 30%;
+  }
 }
 </style>

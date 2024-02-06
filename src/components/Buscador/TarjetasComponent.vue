@@ -443,7 +443,5 @@ h5 {
   .carousel_pagination {
     margin: 0;
   }
-  .carousel_pagination-buttom {
-  }
 }
 </style>

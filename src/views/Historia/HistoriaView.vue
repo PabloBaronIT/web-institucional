@@ -1,9 +1,5 @@
 <template>
   <div class="historia-container">
-    <!-- <Flyer
-      :src="'https://www.jesusmaria.gov.ar/frontend/images/bg-motiva.jpg'"
-      :text="'Noticias'"
-    /> -->
     <div class="linea">
       <div class="izquierdo"></div>
       <h5>NUESTRA HISTORIA</h5>
@@ -45,6 +41,8 @@ export default {
 
 <style scoped>
 .historia-container {
+  width: 100%;
+  /* margin-top: 3%; */
   padding-top: 10%;
   position: relative;
 }
@@ -112,5 +110,47 @@ export default {
   margin-top: 2.5vh;
   margin-left: 1vw;
   margin-right: 1vw;
+}
+@media (max-width: 500px) {
+  .historia-container {
+    padding-top: 5%;
+    /* margin-top: 0; */
+  }
+  .linea {
+    /* text-align: center;
+     margin-top: 3%; 
+    /* margin-bottom: 3%; */
+    /* display: none; */
+    margin-top: 0;
+  }
+  .volver {
+    width: 10%;
+    right: 2%;
+    bottom: -4%;
+    /* background: red; */
+  }
+  .volver h4 {
+    display: none;
+  }
+  .volver img {
+    width: 32px;
+    height: 32px;
+  }
+  .linea h5 {
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .izquierdo {
+    width: 30%;
+  }
+  .derecho {
+    width: 30%;
+  }
+  .textoUltimo h4 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 </style>

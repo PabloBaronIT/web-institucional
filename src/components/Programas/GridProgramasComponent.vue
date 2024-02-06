@@ -63,12 +63,15 @@
   </div>
   <div class="gridMobile">
     <Carousel :itemsToShow="1.2" :wrapAround="true" :transition="600">
-      <Slide v-for="slide in this.datos" :key="slide">
-        <img :src="slide.imagen" alt="imagen" />
+      <Slide v-for="(slide, index) in this.datos" :key="index">
+        <div :class="` item item${index}`">
+          <img :src="slide.imagen" alt="imagen" />
 
-        <div>
-          <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
+          <div>
+            <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
+          </div>
         </div>
+
         <!-- <p>Habilitacion de comercio</p> -->
       </Slide>
       <!-- <template #addons> -->
@@ -225,25 +228,17 @@ a {
     /* padding-right: 3rem; */
   }
   .carousel__slide {
-    padding: 0.3rem 0.3rem;
     background: #fff;
     height: 115px;
-    max-width: 90%;
+    max-width: 193px;
     border-radius: 12px;
     box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
     margin: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: linear-gradient(
-      97deg,
-      #019939 5.33%,
-      #ffcc03 62.67%,
-      #e52320 122.44%
-    );
+
     align-items: center;
-    /* width: 18 vw; */
-    /* width: 10vw; */
   }
   .carousel__slide p {
     font-size: 16px;
@@ -265,6 +260,17 @@ a {
   }
   .interior h5:hover {
     color: #019939;
+  }
+  .item {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-left: 1rem;
   }
 }
 </style>

@@ -51,7 +51,7 @@ export default {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #ffffff;
+    background: #f5f5f5;
   }
   * {
     box-sizing: border-box;
