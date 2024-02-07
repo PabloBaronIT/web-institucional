@@ -46,12 +46,12 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas de igual tamaño */
   grid-template-rows: repeat(2, 1fr); /* Crea 3 filas de altura fija de 100px */
-  gap: 45px;
-  margin: auto;
-  margin-bottom: 10vh;
   width: 70%;
+  margin: auto;
+  gap: 45px;
+  margin-bottom: 5%;
   margin-top: 5%;
-  /* background: green; */
+  justify-content: center;
 }
 .item {
   position: relative;
@@ -112,7 +112,7 @@ export default {
 /* } */
 @media (max-width: 500px) {
   .contenedor-intereses {
-    width: 100%;
+    width: 90%;
     gap: 15px;
     padding: 0 2%;
   }
@@ -120,6 +120,7 @@ export default {
     min-width: 100%;
     min-height: 80px;
     padding: 0;
+    border-radius: 12px;
   }
   .texto {
     font-size: 15px;

@@ -12,7 +12,12 @@
       <div class="derecho"></div>
     </div>
     <GridInteresesComponent />
-    <!-- <MapStreetViewComponent /> -->
+    <div class="linea recorre">
+      <div class="izquierdo"></div>
+      <h5>RECORRE SACANTA</h5>
+      <div class="derecho"></div>
+    </div>
+    <MapStreetViewComponent />
     <div class="volver">
       <div style="display: flex; flex-direction: row">
         <router-link to="/pueblo/sacanta-hoy">
@@ -32,13 +37,13 @@
 <script>
 import CardDescubriComponent from "@/components/Descubri/CardDescubriComponent.vue";
 import GridInteresesComponent from "@/components/Intereses/GridInteresesComponent.vue";
-// import MapStreetViewComponent from "@/components/Mapa/MapStreetViewComponent.vue";
+import MapStreetViewComponent from "@/components/Mapa/MapStreetViewComponent.vue";
 export default {
   name: "DescubriViews",
   components: {
     CardDescubriComponent,
     GridInteresesComponent,
-    // MapStreetViewComponent,
+    MapStreetViewComponent,
   },
   created() {
     window.scrollTo(0, 0);
@@ -99,6 +104,10 @@ export default {
   margin-left: 1vw;
   margin-right: 1vw;
 }
+.recorre {
+  /* display: none; */
+  visibility: hidden;
+}
 @media (max-width: 500px) {
   .descubri-container {
     padding-top: 5%;
@@ -125,10 +134,13 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 30%;
+    width: 40%;
   }
   .derecho {
-    width: 30%;
+    width: 40%;
+  }
+  .recorre {
+    visibility: visible;
   }
 }
 </style>

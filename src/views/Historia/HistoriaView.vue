@@ -45,6 +45,7 @@ export default {
   /* margin-top: 3%; */
   padding-top: 10%;
   position: relative;
+  padding-bottom: 12%;
 }
 
 .linea {
@@ -126,7 +127,7 @@ export default {
   .volver {
     width: 10%;
     right: 2%;
-    bottom: -4%;
+    bottom: 2%;
     /* background: red; */
   }
   .volver h4 {
@@ -141,10 +142,10 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 30%;
+    width: 40%;
   }
   .derecho {
-    width: 30%;
+    width: 40%;
   }
   .textoUltimo h4 {
     font-size: 12px;

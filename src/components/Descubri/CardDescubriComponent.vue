@@ -13,8 +13,8 @@
     <h4 class="mobile">
       Sacanta es un pueblo único, con vitalidad y hospitalidad. La colaboración
       y el progreso son clave en nuestra comunidad. Tradición y futuro se
-      encuentran aquí para avanzar hacia un mañana más brillante. ¡Bienvenido a
-      Sacanta!
+      encuentran aquí para avanzar hacia un mañana más brillante.
+      <strong>¡Bienvenido a Sacanta!</strong>
     </h4>
   </div>
 </template>
@@ -49,7 +49,8 @@ h4 {
     width: 100%;
     height: 116px;
     border-radius: 0px 32px 0px 0px;
-    padding: 13px 16px 16px 16px;
+    padding: 20px 27px 20px 27px;
+    text-align: justify;
   }
   h4 {
     display: none;

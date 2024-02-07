@@ -234,8 +234,8 @@ export default {
 @media (max-width: 500px) {
   .hoy-container {
     padding-top: 5%;
-    height: auto;
-    padding-bottom: 16%;
+    /* min-height: 100vh; */
+    padding-bottom: 13%;
   }
   .linea {
     /* text-align: center;
@@ -264,10 +264,10 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 30%;
+    width: 40%;
   }
   .derecho {
-    width: 30%;
+    width: 40%;
   }
   .tarjetas {
     width: auto;
@@ -306,6 +306,7 @@ export default {
   }
   .institucional {
     /* margin-bottom: 20%; */
+    height: 60px;
   }
 }
 </style>

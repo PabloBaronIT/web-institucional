@@ -78,6 +78,9 @@ export default {
     height: 62px;
     width: 95%;
   }
+  br {
+    display: none;
+  }
   .text h3 {
     font-weight: 700;
     font-size: 10px;
