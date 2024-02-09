@@ -10,16 +10,27 @@
           </h1>
         </div>
         <div style="text-align: center">
-          <h4>ATENCIÓN AL VECINO</h4>
+          <h4>BOMBEROS</h4>
           <h1 class="numeros">
-            <img src="./../../assets/images/TelefonoFooter.svg" alt="" />147
+            <img src="./../../assets/images/TelefonoFooter.svg" alt="" />100
           </h1>
         </div>
         <div style="text-align: center">
           <h4>POLICíA</h4>
           <h1 class="numeros">
-            <img src="./../../assets/images/TelefonoFooter.svg" alt="" />102
+            <img src="./../../assets/images/TelefonoFooter.svg" alt="" />101
           </h1>
+        </div>
+        <div
+          style="
+            text-align: center;
+            color: #019939;
+            height: 50px;
+            margin-top: 4%;
+            text-decoration: underline;
+          "
+        >
+          <h4>Ver más</h4>
         </div>
       </div>
     </div>

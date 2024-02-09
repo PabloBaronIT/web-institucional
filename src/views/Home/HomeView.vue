@@ -10,7 +10,7 @@
     <CardEcoComponent />
     <div class="linea">
       <div class="izquierdo"></div>
-      <h5>DESCUBRÍ NUESTROS PROGRAMA</h5>
+      <h5>DESCUBRÍ NUESTROS PROGRAMAS</h5>
       <div class="derecho"></div>
     </div>
     <GridProgramasComponent />

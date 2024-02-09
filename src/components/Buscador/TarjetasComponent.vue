@@ -103,7 +103,7 @@ input {
     <div class="carousel-mobile">
       <carousel :items-to-show="3" :wrapAround="true" :transition="500">
         <slide v-for="slide in this.gestiones" :key="slide">
-          <router-link to="/historia" class="interior">
+          <router-link to="/pueblo/historia" class="interior">
             <img :src="slide.imagen" alt="" />
             <h5>{{ slide.titulo }}</h5>
           </router-link>
@@ -334,7 +334,7 @@ h5 {
     #e52320 107.64%
   );
   min-height: 54px;
-  width: 30%;
+  width: 26%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -354,6 +354,10 @@ h5 {
 .carousel-mobile {
   display: none;
 }
+.interior h5 {
+  text-align: left;
+}
+/* MOBILE */
 @media (max-width: 500px) {
   .top {
     width: 100%;
@@ -421,16 +425,16 @@ h5 {
     width: 100%;
     background: #fff;
     border-radius: 17px;
-    text-align: center;
+    text-align: left;
     /* padding: 1.5rem 1.5rem; */
     text-decoration: none;
-    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   .interior h5 {
+    /* text-align: left; */
     font-size: 12px;
   }
   .interior h5:hover {

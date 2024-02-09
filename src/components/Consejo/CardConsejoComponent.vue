@@ -8,10 +8,8 @@
         <h3>¡VISITÁ NUESTRA PÁGINA WEB!</h3>
         <p>
           El Consejo Deliberante de Sacanta está en acción, impulsando el
-          progreso en nuestra <br />
-          amada localidad. Unite a nosotros en este emocionante viaje hacia un
-          futuro brillante y <br />
-          lleno de oportunidades.
+          progreso en nuestra amada localidad. Unite a nosotros en este
+          emocionante viaje hacia un futuro brillante y lleno de oportunidades.
         </p>
       </div>
     </div>
@@ -28,18 +26,15 @@ export default {
   background: #eae9e9;
   color: rgba(255, 255, 255, 0.432);
   /* height: 22%; */
-  width: 89%;
+  min-height: 169px;
+  width: 90%;
   margin: auto;
   border-radius: 0px 50px;
-  /* margin-top: 2vh; */
-  padding: 1rem 0;
-  background-image: url("./../../assets/images/CirculoFondo.svg");
-  /* opacity: 0.8; */
+  padding: 1.3rem 0 0 0;
+  background-image: url("./../../assets/images/FrameConsejo.svg");
   background-repeat: repeat;
   background-position: center;
   background-size: 15%;
-
-  /* overflow: var(); */
 }
 .medio {
   width: 92%;
@@ -47,22 +42,23 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-self: center;
   margin: auto;
   /* background: red; */
 }
 .logo {
-  min-height: 126px;
-  width: 75%;
-  margin-left: 6%;
+  min-height: 90px;
+  min-width: 326px;
+  /* margin-left: 6%; */
   /* margin-top: -1rem; */
 }
 .text {
   text-align: left;
-  width: 88%;
+  width: 64%;
+  padding-left: 1%;
 }
 .text p {
-  font-size: 21px;
+  font-size: 20px;
   color: #4b4a49;
   margin-top: -0.5rem;
   font-weight: 400;

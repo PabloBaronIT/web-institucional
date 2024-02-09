@@ -174,7 +174,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   color: white;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 a {
   text-decoration: none;

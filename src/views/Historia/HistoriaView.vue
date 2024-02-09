@@ -82,8 +82,9 @@ export default {
   width: 80%;
   /* height: 146px; */
   margin: auto;
-  margin-top: 8%;
-  margin-bottom: 13%;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  position: relative;
 }
 .textoUltimo h4 {
   font-weight: 400;
@@ -91,9 +92,9 @@ export default {
 }
 .volver {
   position: absolute;
-  width: 30%;
-  right: -12%;
-  bottom: -5%;
+  width: 10%;
+  right: 5%;
+  bottom: 15%;
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
@@ -107,6 +108,8 @@ export default {
 .volver h4 {
   /* margin-left: 14px; */
   color: #4b4a49;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
   margin-top: 2.5vh;
   margin-left: 1vw;
