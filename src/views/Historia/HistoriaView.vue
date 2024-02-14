@@ -45,7 +45,8 @@ export default {
   /* margin-top: 3%; */
   padding-top: 10%;
   position: relative;
-  padding-bottom: 12%;
+  /* padding-bottom: 12%; */
+  background: white;
 }
 
 .linea {
@@ -82,8 +83,8 @@ export default {
   width: 80%;
   /* height: 146px; */
   margin: auto;
-  margin-top: 5%;
-  padding-bottom: 10%;
+  margin-top: 7%;
+  padding-bottom: 15%;
   position: relative;
 }
 .textoUltimo h4 {
@@ -92,17 +93,11 @@ export default {
 }
 .volver {
   position: absolute;
-  width: 10%;
-  right: 5%;
-  bottom: 15%;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* padding: 3.5%; */
-  /* bottom: 16%; */
-  /* margin: auto; */
-  /* right: 4%; */
-  /* left: 10%; */
+  /* background: red; */
+  width: 20%;
+  padding: 3.5%;
+  right: 2%;
+  bottom: 1%;
 }
 
 .volver h4 {

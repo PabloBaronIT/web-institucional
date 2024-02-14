@@ -58,7 +58,7 @@ export default {
 .contenedor {
   width: 100%;
   height: auto;
-  background: #f5f5f5;
+  background: #eae9e9;
   border-radius: 0px 56px;
   margin-top: 3%;
   padding: 6% 3%;

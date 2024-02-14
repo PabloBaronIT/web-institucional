@@ -1,93 +1,3 @@
-<!-- <template>
-  <div class="contenedor">
-    <div class="top"></div>
-    <div class="buscador">
-      <label for="">Buscar</label>
-      <input type="text" name="" id="" />
-      <div>
-        <i class="bi bi-search" style="color: white; font-size: 20px"></i>
-      </div>
-    </div>
-    <h2>¿Qué necesitás hacer?</h2>
-    <CaroulselTarjetasComponent />
-  </div>
-</template>
-<script>
-import CaroulselTarjetasComponent from "@/components/Carousel/CarouselTarjetasComponent.vue";
-export default {
-  name: "TarjetasComponent",
-  components: {
-    CaroulselTarjetasComponent,
-  },
-};
-</script>
-<style scoped>
-.contenedor {
-  position: relative;
-  background: #eae9e9;
-  color: rgba(255, 255, 255, 0.432);
-  height: 41vh;
-  width: 88vw;
-  margin: auto;
-  border-radius: 50px 0px;
-  margin-top: 7vh;
-  padding-top: 2rem;
-  background-image: url("./../../assets/images/CirculoFondoGrandes.svg");
-  /* opacity: 0.8; */
-  background-repeat: repeat;
-  background-position: center;
-  text-align: center;
-  overflow: hidden;
-}
-h2 {
-  color: #019939;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 50px;
-}
-.top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 15%;
-  background: linear-gradient(
-    90deg,
-    #019939 0.18%,
-    #ffcc03 52.79%,
-    #e52320 107.64%
-  );
-}
-.buscador {
-  position: absolute;
-  width: 30%;
-  height: 15%;
-  background: #019939;
-  top: 0;
-  right: 0;
-  border-bottom-left-radius: 50px;
-  text-align: left;
-  padding-left: 4rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-label {
-  color: white;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-input {
-  background: none;
-  border-style: none;
-  margin-left: 0.5rem;
-  margin-right: 1rem;
-  width: 60%;
-}
-</style> -->
-
 <template>
   <div class="contenedor">
     <div class="top"><h6>Gestiones más consultadas</h6></div>
@@ -363,25 +273,33 @@ h5 {
     width: 100%;
     background: #019939;
     height: 31px;
+    padding-top: 2%;
   }
   .top h6 {
     visibility: visible;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
   }
   .contenedor {
     padding-top: 0;
     width: 90%;
     height: 130px;
     border-radius: 15px 0px 0px 0px;
-    /* background: #d3d3d342; */
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
+    /* padding-bottom: 3rem; */
     position: relative;
+    background: #fff;
+    background-image: url("./../../assets/images/FrameConsejo.svg");
   }
   .contenedor h1 {
     font-size: 14px;
     visibility: hidden;
   }
   .buscador {
-    visibility: hidden;
+    display: none;
   }
   h5 {
     color: #4b4a49;
@@ -391,7 +309,7 @@ h5 {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: -1rem;
+    margin-top: -7%;
   }
   .gridcontainer {
     display: none;
@@ -407,10 +325,10 @@ h5 {
     /* padding-right: 3rem; */
   }
   .carousel__slide {
-    padding: 0.3rem 0.3rem;
+    padding: 1% 1%;
     background: #fff;
-    max-height: 6rem;
-    max-width: 70%;
+    min-height: 61px;
+    min-width: 146px;
     border-radius: 8px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 0.5rem;
@@ -420,22 +338,25 @@ h5 {
   .carousel__slide:hover {
     background: linear-gradient(180deg, #019939 4.26%, #ffcc03 126.04%);
   }
+  .hovermobile {
+    background: linear-gradient(180deg, #019939 4.26%, #ffcc03 126.04%);
+  }
   .interior {
     height: 100%;
     width: 100%;
     background: #fff;
-    border-radius: 17px;
-    text-align: left;
-    /* padding: 1.5rem 1.5rem; */
+    border-radius: 8px;
+    text-align: center;
+    padding: 0 10%;
     text-decoration: none;
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   .interior h5 {
-    /* text-align: left; */
-    font-size: 12px;
+    font-size: 11px;
   }
   .interior h5:hover {
     color: #019939;
@@ -443,6 +364,7 @@ h5 {
   .interior img {
     height: 34px;
     width: 34px;
+    margin-right: 1%;
   }
   .carousel_pagination {
     margin: 0;

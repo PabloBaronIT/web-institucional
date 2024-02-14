@@ -197,15 +197,7 @@ a {
     display: none;
     width: 100%;
   }
-  .contenedor {
-    /* width: 100%; */
-    /* height: 121px; */
-    /* margin: auto; */
-    /* margin-bottom: 10%; */
-    /* padding: 0 0; */
-    /* padding: 0 2rem; */
-    background: red;
-  }
+
   .gridMobile {
     display: block;
     width: 100%;
@@ -215,8 +207,7 @@ a {
 
     /* margin-bottom: 10%; */
     /* padding: 0 0; */
-    padding: 0 2rem;
-    /* background: red; */
+    /* padding: 0 2rem; */
   }
   .carousel {
     width: 100%;
@@ -241,7 +232,7 @@ a {
     align-items: center;
   }
   .carousel__slide p {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     font-weight: 600;
   }
@@ -270,7 +261,8 @@ a {
     justify-content: space-around;
     align-items: center;
     color: white;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    padding: 0 2%;
   }
 }
 </style>

@@ -49,18 +49,26 @@ export default {
   /* height: 50%; */
   margin: auto;
   border-radius: 0px 120px;
+  margin-bottom: 2%;
+}
+h5 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 3%;
 }
 .servicios {
   background: white;
   height: 80%;
   width: 100%;
   border-radius: 0px 120px 0px 0px;
-  padding: 4rem 4rem;
+  padding: 4rem 6rem;
+  margin-top: 4%;
 }
 .sugerencias {
   display: block;
   width: 45%;
-  margin-top: 2%;
   /* height: 63px; */
 }
 .streetView {
@@ -71,10 +79,12 @@ iframe {
   border: 0;
   width: 100%;
   height: 100%;
+
   border-radius: 0px 0px 0px 120px;
 }
 .imagen {
   /* background: white; */
+  margin-top: 4%;
   height: 80%;
 
   width: 100%;
@@ -86,9 +96,7 @@ li {
   font-weight: 400;
   line-height: normal;
 }
-h5 {
-  /* margin-top: -8rem; */
-}
+
 @media (max-width: 500px) {
   .contenedor-view {
     width: 100%;
@@ -135,7 +143,6 @@ h5 {
   }
   h5 {
     font-size: 7px;
-    margin-top: 2%;
   }
 }
 </style>

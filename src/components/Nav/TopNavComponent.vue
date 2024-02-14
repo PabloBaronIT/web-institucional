@@ -113,6 +113,17 @@
         <img class="redes" src="@/assets/images/Facebook.svg" alt="" />
       </a>
     </div>
+    <div class="redes-container-mobile">
+      <a href="">
+        <img class="redes" src="@/assets/images/Instagram.svg" alt="" />
+      </a>
+      <a href="">
+        <img class="redes" src="@/assets/images/Facebook.svg" alt="" />
+      </a>
+      <a href="">
+        <img class="redes" src="@/assets/images/Lupa.svg" alt="" />
+      </a>
+    </div>
   </nav>
   <div class="menu" v-if="this.menu">
     <div
@@ -156,6 +167,9 @@
         </router-link>
       </div>
       <div class="linea-menu"></div>
+    </div>
+    <div class="masGestiones">
+      <p>TRÁMITES</p>
     </div>
   </div>
   <!-- <div class="colores">
@@ -229,9 +243,8 @@ export default {
     },
     setSubMenu(index) {
       console.log("soy el indice");
-      this.itemSelect = index;
       this.open = !this.open;
-      // this.ListMenu[index].open = true;
+      this.itemSelect = index;
     },
   },
 };
@@ -316,7 +329,14 @@ export default {
     display: none;
   }
   .redes-container {
+    display: none;
+  }
+  .redes-container-mobile {
+    visibility: visible;
     width: 25%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #00c3a8; */
   }
   .redes {
     width: 23px;
@@ -330,6 +350,7 @@ export default {
     height: auto;
     background: #fff;
     z-index: 15;
+    padding-bottom: 50%;
   }
   .menu h6 {
     color: #3e3e3e;
@@ -351,7 +372,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    padding: 2% 2%;
+    padding: 4% 2% 2%;
   }
   .linea-menu {
     height: 1px;
@@ -377,6 +398,32 @@ export default {
   }
   .item-subMenu h6 {
     margin-bottom: 2%;
+  }
+  .masGestiones {
+    border-radius: 40px;
+    background: linear-gradient(
+      90deg,
+      #019939 0.18%,
+      #ffcc03 52.79%,
+      #e52320 107.64%
+    );
+    max-height: 30px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding-top: 1.5%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  .masGestiones p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    color: white;
   }
 }
 </style>

@@ -32,8 +32,8 @@ export default {
   height: 30%;
   padding: 3rem 2.5rem;
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 4%;
 }
 h4 {
   color: #4b4a49;

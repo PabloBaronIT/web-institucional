@@ -34,6 +34,8 @@ export default {
   background-image: url("./../../assets/images/FrameConsejo.svg");
   background-repeat: repeat;
   background-position: center;
+  /* overflow: hidden; */
+
   background-size: 15%;
 }
 .medio {

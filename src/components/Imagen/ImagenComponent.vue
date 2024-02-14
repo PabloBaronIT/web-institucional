@@ -10,11 +10,9 @@
       </h3>
     </div>
     <div class="text-derecho">
-      <h1 class="text" style="margin-left: 6%">Tus</h1>
+      <h1 class="text tus">Tus</h1>
       <h1 class="grande">gestiones</h1>
-      <h1 class="text" style="margin-top: -7%; margin-left: 15%">
-        donde estés
-      </h1>
+      <h1 class="text donde">donde estés</h1>
     </div>
     <div class="muni-linea">
       <img src="@/assets/images/Muni-linea.svg" alt="" />
@@ -84,6 +82,13 @@ export default {
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
   /* line-height: normal; */
 }
+.tus {
+  margin-left: 6%;
+}
+.donde {
+  margin-top: -7%;
+  margin-left: 15%;
+}
 .grande {
   font-size: 100px;
   font-weight: 400;
@@ -101,7 +106,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(123deg, #019939 9.94%, #ffcc03 98.77%);
+  background: linear-gradient(106deg, #019939 0%, #ffcc03 101.17%);
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
   border-radius: 0px 20px;
 }
@@ -139,22 +144,28 @@ export default {
   .text-izquierdo h3 {
     font-size: 8px;
   }
+  .text-derecho {
+    top: 14%;
+  }
   .grande {
-    font-size: 24px;
+    font-size: 32px;
+    margin-top: -15%;
   }
   .text {
-    font-size: 15px;
+    font-size: 16px;
   }
+  .donde {
+    margin-top: -12%;
+  }
+
   .muni-linea {
     border-radius: 16px;
-    background: var(
-      --Degrade-VA,
-      linear-gradient(106deg, #00c3a8 0%, #ffb900 101.17%)
-    );
+
     box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
     width: 60px;
     height: 23px;
-    right: 7%;
+    right: 15%;
+    bottom: 36%;
   }
   .muni-linea img {
     width: 50%;

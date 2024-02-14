@@ -14,11 +14,11 @@
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE URBANA</h3>
-        <h1 class="huno">173,88 Has.</h1>
+        <h1 class="hUno">173,88 Has.</h1>
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE RURAL</h3>
-        <h1 class="huno">41.826,12 Has.</h1>
+        <h1 class="hUno">41.826,12 Has.</h1>
       </div>
     </div>
     <div class="institucional">
@@ -182,10 +182,11 @@ export default {
 .tarjetas-h1 {
   font-weight: 900;
   font-size: 80px;
-  margin-top: -4%;
+  margin-top: -6%;
 }
-.huno {
+.hUno {
   font-weight: 900;
+  margin-top: -4%;
 
   font-size: 48px;
 }
@@ -195,13 +196,15 @@ export default {
   justify-content: space-evenly;
   width: 100%;
   background: #eae9e9;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  padding: 2%;
 }
 .comercio {
   width: 15%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   /* align-items: center; */
 }
 .comercio h1 {
@@ -211,6 +214,7 @@ export default {
 }
 .comercio h3 {
   font-weight: 100;
+  margin-top: -10%;
 }
 .volver {
   position: absolute;
