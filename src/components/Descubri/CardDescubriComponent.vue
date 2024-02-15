@@ -49,8 +49,9 @@ h4 {
     width: 100%;
     height: 116px;
     border-radius: 0px 32px 0px 0px;
-    padding: 20px 27px 20px 27px;
-    text-align: justify;
+    padding: 5% 7%;
+    text-align: center;
+    margin-bottom: 6%;
   }
   h4 {
     display: none;

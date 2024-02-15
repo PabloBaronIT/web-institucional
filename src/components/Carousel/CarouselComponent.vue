@@ -13,13 +13,15 @@
           <p class="fecha">
             {{ new Date().toLocaleDateString() }}
           </p>
-          <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
+          <p>{{ slide.titulo }}</p>
         </router-link>
       </div>
       <!-- <p>Habilitacion de comercio</p> -->
     </Slide>
     <template #addons>
-      <Navigation />
+      <div class="navegation">
+        <Navigation />
+      </div>
       <!-- <Pagination /> -->
     </template>
   </Carousel>
@@ -152,36 +154,45 @@ img {
   /* margin: auto; */
   text-align: left;
   padding-left: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 5%;
+}
+.interior-titulo p {
+  margin-top: -3%;
 }
 .fecha {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
 }
 @media (max-width: 500px) {
   .contenedor {
     height: 195px;
     width: 100%;
+    padding: 0;
   }
-  /* .slide {
+  .slide {
     height: 100%;
     width: 100%;
     display: block;
-  } */
-  /* .carousel {
+  }
+  .carousel {
     height: 195px;
     width: 100%;
-  } */
+    margin-bottom: 15%;
+  }
+  .carousel__track {
+    margin-bottom: 5%;
+  }
   .carousel__slide {
-    height: 142px;
+    height: 185px;
+    width: 146px;
     padding: 0;
     border-radius: 16px;
   }
-  /* .carousel__slide--active {
-    height: 142px;
-    margin: 1.5rem 2.5rem;
-    padding-top: 3px;
-  } */
+  .carousel__slide--active {
+    height: 185px;
+    margin: 4% 4%;
+    /* padding-top: 3px; */
+  }
 
   .interior-titulo p {
     font-size: 8px;
@@ -190,12 +201,16 @@ img {
     padding-left: 0.5rem;
   }
   img {
-    height: 45%;
+    height: 58%;
     width: 95%;
     border-radius: 16px;
   }
   .navegation {
     display: none;
+  }
+  .fecha {
+    font-size: 10px;
+    font-weight: 700;
   }
 }
 </style>

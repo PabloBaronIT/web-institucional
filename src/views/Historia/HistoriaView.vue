@@ -46,7 +46,7 @@ export default {
   padding-top: 10%;
   position: relative;
   /* padding-bottom: 12%; */
-  background: white;
+  background: #fff;
 }
 
 .linea {
@@ -140,10 +140,10 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 40%;
+    width: 38%;
   }
   .derecho {
-    width: 40%;
+    width: 38%;
   }
   .textoUltimo h4 {
     font-size: 12px;

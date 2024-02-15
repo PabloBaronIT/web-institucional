@@ -3,7 +3,7 @@
     <div class="telefonos-container">
       <h5>TELÉFONOS ÚTILES - ATENCIÓN 24 HS</h5>
       <div class="telefonos">
-        <div style="text-align: center">
+        <div style="text-align: center" class="hospital">
           <h4>HOSPITAL</h4>
           <h1 class="numeros">
             <img src="./../../assets/images/TelefonoFooter.svg" alt="" />111
@@ -15,21 +15,19 @@
             <img src="./../../assets/images/TelefonoFooter.svg" alt="" />100
           </h1>
         </div>
+        <div style="text-align: center" class="centroSalud">
+          <h4>CENTRO DE SALUD</h4>
+          <h1 class="numeros">
+            <img src="./../../assets/images/TelefonoFooter.svg" alt="" />100
+          </h1>
+        </div>
         <div style="text-align: center">
           <h4>POLICíA</h4>
           <h1 class="numeros">
             <img src="./../../assets/images/TelefonoFooter.svg" alt="" />101
           </h1>
         </div>
-        <div
-          style="
-            text-align: center;
-            color: #019939;
-            height: 50px;
-            margin-top: 4%;
-            text-decoration: underline;
-          "
-        >
+        <div class="mas">
           <h4>Ver más</h4>
         </div>
       </div>
@@ -43,8 +41,10 @@
     </div>
     <div class="direccion">
       <h5>
-        <strong>Municipalida de Sacanta | </strong> <br class="br" />
-        25 de Mayo 292, Sacanta, Cordoba | CP X5945 | TEL.: 03533 15 417923
+        <strong>Municipalida de Sacanta <span>|</span> </strong>
+        <br class="br" />
+        25 de Mayo 292, Sacanta, Cordoba <br class="br" /><span>|</span>CP X5945
+        | TEL.: 03533 15 417923
       </h5>
     </div>
   </footer>
@@ -129,6 +129,16 @@ h5 {
 .numeros img {
   visibility: hidden;
 }
+.mas {
+  text-align: center;
+  color: #019939;
+  height: 50px;
+  margin-top: 4%;
+  text-decoration: underline;
+}
+.centroSalud {
+  display: none;
+}
 /* MOBILE */
 @media (max-width: 500px) {
   footer {
@@ -161,6 +171,7 @@ h5 {
     font-weight: 900;
     line-height: normal;
     margin-top: -0.8rem;
+    margin-left: 0;
   }
   .numeros img {
     visibility: visible;
@@ -175,7 +186,7 @@ h5 {
     height: 32px;
     position: absolute;
     left: 4%;
-    bottom: 6%;
+    bottom: 12%;
   }
   .direccion {
     width: 40%;
@@ -190,6 +201,18 @@ h5 {
   }
   .br {
     display: block;
+  }
+  .mas {
+    display: none;
+  }
+  .hospital {
+    display: none;
+  }
+  .centroSalud {
+    display: block;
+  }
+  span {
+    display: none;
   }
 }
 </style>

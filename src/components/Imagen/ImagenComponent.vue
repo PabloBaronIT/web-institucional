@@ -1,24 +1,26 @@
 <template>
-  <div class="contenedor-imagen">
-    <div class="capa"></div>
-    <div class="text-izquierdo">
-      <h3 style="color: white">
-        Presentá todos tus trámites y <br />
-        gestiones de manera rápida <br />y simple, sin horarios y <br />
-        desde el lugar que <br />
-        vos elijas.
-      </h3>
+  <a href="https://munienlinea-sacanta.com.ar/#/login" target="blank">
+    <div class="contenedor-imagen">
+      <div class="capa"></div>
+      <div class="text-izquierdo">
+        <h3 style="color: white">
+          Presentá todos tus trámites y <br />
+          gestiones de manera rápida <br />y simple, sin horarios y <br />
+          desde el lugar que <br />
+          vos elijas.
+        </h3>
+      </div>
+      <div class="text-derecho">
+        <h1 class="text tus">Tus</h1>
+        <h1 class="grande">gestiones</h1>
+        <h1 class="text donde">donde estés</h1>
+      </div>
+      <div class="muni-linea">
+        <img src="@/assets/images/Muni-linea.svg" alt="" />
+      </div>
+      <div class="linea-b"></div>
     </div>
-    <div class="text-derecho">
-      <h1 class="text tus">Tus</h1>
-      <h1 class="grande">gestiones</h1>
-      <h1 class="text donde">donde estés</h1>
-    </div>
-    <div class="muni-linea">
-      <img src="@/assets/images/Muni-linea.svg" alt="" />
-    </div>
-    <div class="linea-b"></div>
-  </div>
+  </a>
 </template>
 <script>
 export default {

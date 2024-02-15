@@ -35,6 +35,7 @@ export default {
         { titulo: "DISPENSARIO" },
         { titulo: "GOMERIA" },
         { titulo: "CLUB DE DEPORTE" },
+        { titulo: "ESTACIÓN DE SERVICIO" },
       ],
     };
   },
@@ -100,7 +101,7 @@ li {
 @media (max-width: 500px) {
   .contenedor-view {
     width: 100%;
-    /* height: 63px; */
+    min-height: 184px;
     display: flex;
     flex-direction: column;
     margin-bottom: 10%;
@@ -108,6 +109,7 @@ li {
   .sugerencias {
     width: 90%;
     margin: auto;
+    margin-top: 6%;
   }
   .streetView {
     width: 100%;
@@ -133,13 +135,14 @@ li {
   }
   .servicios {
     display: grid;
-    grid-template-columns: repeat(2, 87px);
+    grid-template-columns: repeat(2, 100px);
     border-radius: 0px 33px 0px 0px;
-    gap: 3px;
-    padding: 1rem 3rem;
-    height: 63px;
-    align-items: center;
-    justify-content: center;
+    gap: 5%;
+    padding: 5% 10%;
+    min-height: 63px;
+    margin-top: 2%;
+    /* align-items: center; */
+    /* justify-content: center; */
   }
   h5 {
     font-size: 7px;

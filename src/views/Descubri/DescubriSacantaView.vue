@@ -134,10 +134,10 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 40%;
+    width: 38%;
   }
   .derecho {
-    width: 40%;
+    width: 38%;
   }
   .recorre {
     visibility: visible;

@@ -131,8 +131,6 @@ export default {
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
-  opacity: 1;
-  z-index: 1;
 }
 .item1,
 .item3 {
@@ -174,6 +172,7 @@ export default {
     width: 90%;
     gap: 15px;
     padding: 0 2%;
+    margin-bottom: 6%;
   }
   .item {
     min-width: 100%;
@@ -183,6 +182,10 @@ export default {
   }
   .texto {
     font-size: 15px;
+    margin-top: 2%;
+  }
+  .imagenHover {
+    border-radius: 12px;
   }
 }
 </style>

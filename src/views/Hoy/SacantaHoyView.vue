@@ -111,6 +111,7 @@ export default {
 .hoy-container {
   padding-top: 10%;
   position: relative;
+  min-height: auto;
   padding-bottom: 12%;
 }
 
@@ -194,10 +195,12 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-content: center;
   width: 100%;
+  align-items: flex-start;
   background: #eae9e9;
   margin-bottom: 3%;
-  padding: 2%;
+  padding: 3% 2%;
 }
 .comercio {
   width: 15%;
@@ -239,6 +242,7 @@ export default {
   .hoy-container {
     padding-top: 5%;
     /* min-height: 100vh; */
+    height: auto;
     padding-bottom: 13%;
   }
   .linea {
@@ -250,7 +254,9 @@ export default {
   }
   .contenedor-tar {
     margin-top: 6%;
-    margin-bottom: 6%;
+    /* margin-bottom: 6%; */
+    padding: 0 3%;
+    max-height: 40px;
   }
   .volver {
     width: 100%;
@@ -268,33 +274,38 @@ export default {
     font-weight: 400;
   }
   .izquierdo {
-    width: 40%;
+    width: 38%;
   }
   .derecho {
-    width: 40%;
+    width: 38%;
   }
   .tarjetas {
     width: auto;
     height: auto;
     border-radius: 8px;
-    padding: 8.584px 10px;
+    padding: 2% 4%;
   }
   .tarjetas h3 {
     font-size: 8px;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 2%;
   }
   .tarjetas-h1 {
     font-size: 19px;
   }
-  .huno {
+  .hUno {
     font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
   }
   .comercio {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* align-items: center; */
     align-items: center;
+    text-align: left;
   }
   .comercio h1 {
     color: #4b4a49;
@@ -307,9 +318,11 @@ export default {
     font-style: normal;
     font-weight: 300;
     line-height: 100%;
+    margin-top: 2%;
+    margin-left: 6%;
   }
   .institucional {
-    /* margin-bottom: 20%; */
+    margin-bottom: 10%;
     height: 60px;
   }
 }

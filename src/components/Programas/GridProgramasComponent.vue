@@ -67,8 +67,8 @@
         <div :class="` item item${index}`">
           <img :src="slide.imagen" alt="imagen" />
 
-          <div>
-            <p style="margin-top: -0.5rem">{{ slide.titulo }}</p>
+          <div class="tituloMobile">
+            <p>{{ slide.titulo }}</p>
           </div>
         </div>
 
@@ -203,6 +203,7 @@ a {
     width: 100%;
     height: 100%;
     margin: auto;
+    /* margin-bottom: 6%; */
     /* margin-top: -20rem; */
 
     /* margin-bottom: 10%; */
@@ -211,7 +212,7 @@ a {
   }
   .carousel {
     width: 100%;
-    height: 130px;
+    height: auto;
     /* margin: auto; */
     /* padding: 1rem; */
     /* background: rebeccapurple; */
@@ -220,11 +221,11 @@ a {
   }
   .carousel__slide {
     background: #fff;
-    height: 115px;
+    height: 96px;
     max-width: 193px;
     border-radius: 12px;
-    box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    margin: 0.5rem;
+    /* box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2); */
+    margin: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -245,7 +246,7 @@ a {
     background: #fff;
     border-radius: 17px;
     text-align: center;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 2rem;
     text-decoration: none;
     text-align: center;
   }
@@ -262,7 +263,10 @@ a {
     align-items: center;
     color: white;
     /* padding-left: 1rem; */
-    padding: 0 2%;
+    padding: 0% 2%;
+  }
+  .tituloMobile {
+    margin-top: 10%;
   }
 }
 </style>

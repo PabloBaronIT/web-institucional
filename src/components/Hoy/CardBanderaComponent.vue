@@ -71,13 +71,17 @@ img {
   }
   .banderamobile {
     display: block;
+    max-width: 110px;
+    max-height: 101px;
   }
   img {
-    height: 101px;
+    height: 100%;
+    width: 100%;
   }
   .text {
     border-radius: 0;
-    padding: 2%;
+    padding: 2% 5%;
+    width: 100%;
   }
   .text h4 {
     font-size: 8px;

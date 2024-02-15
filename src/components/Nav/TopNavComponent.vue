@@ -257,7 +257,7 @@ export default {
 </style>
 <style scoped>
 .top-nav-container {
-  height: 80px;
+  max-height: 56px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -296,6 +296,9 @@ export default {
   justify-content: space-between;
   /* margin-right: 3rem; */
 }
+.redes-container-mobile {
+  display: none;
+}
 .hoverMenu:hover {
   color: #019939;
 }
@@ -328,15 +331,15 @@ export default {
   .nav-botones {
     display: none;
   }
-  .redes-container {
-    display: none;
-  }
   .redes-container-mobile {
     visibility: visible;
     width: 25%;
     display: flex;
     justify-content: space-around;
     /* background-color: #00c3a8; */
+  }
+  .redes-container {
+    display: none;
   }
   .redes {
     width: 23px;
@@ -345,7 +348,7 @@ export default {
   .menu {
     display: block;
     position: absolute;
-    top: 6%;
+    top: 56px;
     width: 100%;
     height: auto;
     background: #fff;

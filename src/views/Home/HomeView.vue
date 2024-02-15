@@ -19,7 +19,7 @@
     </div>
     <div class="linea">
       <div class="izquierdo"></div>
-      <h5>TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h5>
+      <h5 style="margin: 4px">TE MOSTRAMOS LAS ÚLTIMAS NOVEDADES</h5>
       <div class="derecho"></div>
     </div>
     <!-- <div class="carouselNoticias"> -->
@@ -144,8 +144,8 @@ export default {
 @media (max-width: 500px) {
   .linea {
     text-align: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 8%;
+    margin-bottom: 4%;
   }
   .linea h5 {
     font-size: 8px;
