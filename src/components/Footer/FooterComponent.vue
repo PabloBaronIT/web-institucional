@@ -41,10 +41,10 @@
     </div>
     <div class="direccion">
       <h5>
-        <strong>Municipalida de Sacanta <span>|</span> </strong>
+        <strong>Municipalidad de Sacanta <span>|</span> </strong>
         <br class="br" />
-        25 de Mayo 292, Sacanta, Cordoba <br class="br" /><span>|</span>CP X5945
-        | TEL.: 03533 15 417923
+        25 de Mayo 292, Sacanta, Cordoba <br class="br" /><span>|</span> CP
+        X5945 | TEL.: 03533 15 417923
       </h5>
     </div>
   </footer>
@@ -147,10 +147,11 @@ h5 {
     position: relative;
   }
   h5 {
-    font-size: 6px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 1%;
   }
   .telefonos-container {
     height: 50px;
@@ -158,6 +159,8 @@ h5 {
     width: 90%;
     margin: auto;
     margin-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 5%;
   }
   h4 {
     font-size: 8px;
@@ -186,15 +189,15 @@ h5 {
     height: 32px;
     position: absolute;
     left: 4%;
-    bottom: 12%;
+    bottom: 14%;
   }
   .direccion {
-    width: 40%;
+    width: 50%;
     /* margin-right: -10%; */
     text-align: right;
     position: absolute;
     right: 5%;
-    bottom: 6%;
+    bottom: 2%;
   }
   .logo-muni {
     width: 112px;

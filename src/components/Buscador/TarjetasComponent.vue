@@ -62,42 +62,42 @@ export default {
         {
           titulo: "LICENCIA DE CONDUCIR",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1703006870/icon-licencia_oelvrg.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708108999/icon-licencia_1_v7zh9w.png",
         },
         {
           titulo: "COMERCIO",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693345628/Group_10_cozjdd.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109056/icon-habilitaciones_1_l89o7q.png",
         },
         {
           titulo: "ALUMBRADO PÚBLICO",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693345591/Group_9_a5nlfm.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109103/icon-alumbrado_1_gyhd2q.png",
         },
         {
           titulo: "CATASTRO Y OBRAS",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693256926/Group_j2cw4e.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109210/Frame_6_1_xxwj0x.png",
         },
         {
           titulo: "REGISTRO CIVIL",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1701805280/icon-registro_eoepes.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109256/icon-registro_1_jegcgt.png",
         },
         {
           titulo: "CALLES Y VEREDAS",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693341288/Group_6_x0z8lh.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109300/Group_1_g1upxk.png",
         },
         {
           titulo: "PROVEEDORES MUNICIPALES",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693257709/Group_4_l3ked2.svg",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109366/Group_2_tkylng.png",
         },
         {
           titulo: "PAGOS",
           imagen:
-            "https://res.cloudinary.com/ddko88otf/image/upload/v1693256771/Vector_cfrwyo.svg ",
+            "https://res.cloudinary.com/ddko88otf/image/upload/v1708109432/icon-peso_1_wtubk6.png",
         },
       ],
     };
@@ -220,7 +220,8 @@ h5 {
   border-radius: 16px;
   height: 100%;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 4%;
+  text-align: left;
   /* max-height: 80px; */
 
   /* width: 100%; */
@@ -228,6 +229,7 @@ h5 {
 .card-body img {
   max-width: 44px;
   min-height: 30px;
+  margin-right: 3%;
 }
 .cardGestiones:hover {
   background: linear-gradient(#019939 4.26%, #ffcc03 126.04%);
@@ -362,8 +364,9 @@ h5 {
     color: #019939;
   }
   .interior img {
-    height: 34px;
-    width: 34px;
+    max-height: 30px;
+    max-width: 30px;
+
     margin-right: 1%;
   }
   .carousel_pagination {

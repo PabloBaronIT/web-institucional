@@ -2,11 +2,11 @@
   <div class="contenedor">
     <div class="img">
       <img src="@/../public/images/bandera.png" alt="" class="banderaweb" />
-      <img
-        src="@/../public/images/banderamobile.png"
+      <!-- <img
+        src="@/../public/images/banderaMobile.png"
         alt=""
         class="banderamobile"
-      />
+      /> -->
     </div>
     <div class="text">
       <h4>
@@ -65,23 +65,30 @@ img {
   }
   .contenedor {
     width: 100%;
-    height: 101px;
+    /* height: 101px; */
     margin-top: 6%;
     margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
   }
   .banderamobile {
     display: block;
-    max-width: 110px;
-    max-height: 101px;
+    width: 100%;
+    max-height: 167px;
   }
-  img {
-    height: 100%;
+  .img {
+    background-image: url("./../../../public/images/banderaMobile.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    max-height: 167px;
+
     width: 100%;
   }
   .text {
     border-radius: 0;
     padding: 2% 5%;
     width: 100%;
+    text-align: center;
   }
   .text h4 {
     font-size: 8px;

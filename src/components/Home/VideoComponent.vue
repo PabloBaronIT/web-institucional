@@ -1,6 +1,6 @@
 <template>
   <div class="video-container">
-    <div class="tiempo">
+    <!-- <div class="tiempo">
       <img :src="this.icono" alt="imagen" class="icono" />
       <h4>{{ this.nombreDia }}</h4>
       <h4 style="margin-top: -1rem; margin-bottom: -0.5rem">
@@ -13,10 +13,37 @@
       </p>
       <div class="lin"></div>
       <p style="font-weight: 300; line-height: 1.2rem">
-        <!-- {{ new Date().toLocaleTimeString().slice(0, -6) }} hs <br /> -->
         {{ this.horas }}:{{ this.minutos }}hs<br />
         {{ this.text }} <br />HUMEDAD {{ this.tiempo.humidity }} %
       </p>
+    </div> -->
+
+    <div
+      class="tomorrow tiempo"
+      data-location-id="001398"
+      data-language="ES"
+      data-unit-system="METRIC"
+      data-skin="light"
+      data-widget-type="aqiMini"
+    >
+      <a
+        href="https://www.tomorrow.io/weather-api/"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+        style="
+          position: absolute;
+          bottom: 0;
+          transform: translateX(-50%);
+          left: 50%;
+        "
+      >
+        <img
+          alt="Powered by the Tomorrow.io Weather API"
+          src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+          width="250"
+          height="18"
+        />
+      </a>
     </div>
     <div class="texto">
       <!-- <h1 class="trabajando">trabajando</h1> -->
@@ -38,6 +65,20 @@
   </div>
 </template>
 <script>
+(function (d, s, id) {
+  if (d.getElementById(id)) {
+    if (window.__TOMORROW__) {
+      window.__TOMORROW__.renderWidget();
+    }
+    return;
+  }
+  const fjs = d.getElementsByTagName(s)[0];
+  const js = d.createElement(s);
+  js.id = id;
+  js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "tomorrow-sdk");
 import axios from "axios";
 export default {
   name: "VideoComponent",
@@ -54,8 +95,8 @@ export default {
     };
   },
   created() {
-    this.getTiempo();
-    setInterval(() => this.setTiempo(), 1000);
+    // this.getTiempo();
+    // setInterval(() => this.setTiempo(), 1000);
   },
   methods: {
     getTiempo() {
@@ -206,17 +247,17 @@ export default {
   position: absolute;
   top: 25%;
   left: 7%;
-  width: 12%;
-  height: 65%;
+  /* width: 177px; */
+  /* height: 200px; */
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  background: rgba(245, 245, 245, 0.1);
-  backdrop-filter: blur(7.5px);
-  border-bottom-right-radius: 20px;
-  padding: 1%;
-  text-align: left;
+  /* display: flex;
+  flex-direction: column; */
+  /* color: #fff; */
+  /* background: rgba(245, 245, 245, 0.1); */
+  /* backdrop-filter: blur(7.5px); */
+  /* border-bottom-right-radius: 20px; */
+  /* padding: 1%; */
+  /* text-align: left; */
   /* border: 0.5px solid white; */
 }
 

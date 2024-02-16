@@ -61,6 +61,7 @@
       </router-link>
     </div>
   </div>
+  <!-- MOBILE -->
   <div class="gridMobile">
     <Carousel :itemsToShow="1.2" :wrapAround="true" :transition="600">
       <Slide v-for="(slide, index) in this.datos" :key="index">
@@ -259,7 +260,7 @@ a {
     border-radius: 12px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: white;
     /* padding-left: 1rem; */
@@ -267,6 +268,7 @@ a {
   }
   .tituloMobile {
     margin-top: 10%;
+    margin-left: 5%;
   }
 }
 </style>

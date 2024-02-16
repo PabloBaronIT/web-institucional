@@ -8,17 +8,19 @@
     <MapaComponent />
     <CardBanderaComponent />
     <div class="contenedor-tar">
-      <div class="tarjetas">
+      <div class="tarjetas habitantes">
         <h3>HABITANTES</h3>
         <h1 class="tarjetas-h1">3134</h1>
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE URBANA</h3>
-        <h1 class="hUno">173,88 Has.</h1>
+        <h1 class="hUno">173,88 <span>Has.</span></h1>
+        <h1 class="hecta hUno">Hectáreas</h1>
       </div>
       <div class="tarjetas">
         <h3>SUPERFICIE RURAL</h3>
-        <h1 class="hUno">41.826,12 Has.</h1>
+        <h1 class="hUno">41.826,12 <span>Has.</span></h1>
+        <h1 class="hecta hUno">Hectáreas</h1>
       </div>
     </div>
     <div class="institucional">
@@ -53,7 +55,6 @@
 </template>
 
 <script>
-// import HistoriaComponentVue from "@/components/Historia/HistoriaComponent.vue";
 import CardBanderaComponent from "@/components/Hoy/CardBanderaComponent.vue";
 import MapaComponent from "@/components/Mapa/MapaComponent.vue";
 export default {
@@ -70,12 +71,10 @@ export default {
   },
 
   components: {
-    // HistoriaComponentVue,
     CardBanderaComponent,
     MapaComponent,
   },
   created() {
-    // setInterval(this.setComercios, 20);
     this.asd();
     window.scrollTo(0, 0);
   },
@@ -160,7 +159,7 @@ export default {
   height: auto;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -178,16 +177,16 @@ export default {
   /* justify-content: center; */
   /* align-content: center; */
   color: white;
-  padding-top: 1.5rem;
+  /* padding-top: 2rem; */
 }
 .tarjetas-h1 {
   font-weight: 900;
   font-size: 80px;
-  margin-top: -6%;
+  margin-top: -5%;
 }
 .hUno {
   font-weight: 900;
-  margin-top: -4%;
+  margin-top: -3%;
 
   font-size: 48px;
 }
@@ -280,10 +279,14 @@ export default {
     width: 38%;
   }
   .tarjetas {
-    width: auto;
-    height: auto;
+    max-width: 95px;
+    max-height: 57px;
     border-radius: 8px;
-    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2% 4%; */
   }
   .tarjetas h3 {
     font-size: 8px;
@@ -298,6 +301,7 @@ export default {
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
+    margin-bottom: -5%;
   }
   .comercio {
     display: flex;
@@ -324,6 +328,15 @@ export default {
   .institucional {
     margin-bottom: 10%;
     height: 60px;
+  }
+  span {
+    display: none;
+  }
+  .hecta {
+    display: block;
+  }
+  .habitantes {
+    padding-top: 5%;
   }
 }
 </style>

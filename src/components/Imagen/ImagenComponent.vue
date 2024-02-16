@@ -144,7 +144,15 @@ export default {
   }
 
   .text-izquierdo h3 {
-    font-size: 8px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .text-izquierdo {
+    width: 30%;
+  }
+  br {
+    display: none;
   }
   .text-derecho {
     top: 14%;

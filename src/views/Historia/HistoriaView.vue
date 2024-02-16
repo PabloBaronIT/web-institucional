@@ -124,7 +124,7 @@ export default {
   }
   .volver {
     width: 10%;
-    right: 2%;
+    right: 5%;
     bottom: 2%;
     /* background: red; */
   }

@@ -10,10 +10,14 @@
 
       <div class="interior-titulo" style="text-align: left">
         <router-link to="/historia">
-          <p class="fecha">
-            {{ new Date().toLocaleDateString() }}
-          </p>
-          <p>{{ slide.titulo }}</p>
+          <div class="fecha">
+            <p>
+              {{ new Date().toLocaleDateString() }}
+            </p>
+          </div>
+          <div class="descripcion">
+            <p>{{ slide.titulo }}</p>
+          </div>
         </router-link>
       </div>
       <!-- <p>Habilitacion de comercio</p> -->
@@ -190,27 +194,40 @@ img {
   }
   .carousel__slide--active {
     height: 185px;
-    margin: 4% 4%;
+    margin: 4% 6%;
     /* padding-top: 3px; */
   }
-
+  .carousel__slide--prev {
+    height: 185px;
+  }
+  .carousel__slide--next {
+    height: 185px;
+  }
   .interior-titulo p {
-    font-size: 8px;
+    font-size: 12px;
+    line-height: normal;
+    /* margin-top: -8%; */
   }
   .interior-titulo {
     padding-left: 0.5rem;
+    padding-top: 2%;
   }
   img {
-    height: 58%;
+    height: 50%;
     width: 95%;
-    border-radius: 16px;
+    border-radius: 12px;
+    margin-top: 6%;
   }
   .navegation {
     display: none;
   }
   .fecha {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
+    /* margin-bottom: -0.1rem; */
+  }
+  .descripcion {
+    margin-top: -13%;
   }
 }
 </style>

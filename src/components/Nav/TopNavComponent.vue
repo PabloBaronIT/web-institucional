@@ -172,13 +172,6 @@
       <p>TRÁMITES</p>
     </div>
   </div>
-  <!-- <div class="colores">
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="red"></div>
-  </div> -->
 </template>
 
 <script>
@@ -257,7 +250,7 @@ export default {
 </style>
 <style scoped>
 .top-nav-container {
-  max-height: 56px;
+  max-height: 80px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -321,7 +314,7 @@ export default {
     height: 56px;
     width: 100%;
     position: relative;
-    padding: 0% 2%;
+    padding: 0% 4%;
     z-index: 5;
   }
   .logo-muni {
@@ -400,7 +393,7 @@ export default {
     background: #fff;
   }
   .item-subMenu h6 {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
   .masGestiones {
     border-radius: 40px;

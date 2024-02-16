@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 .eco-contenedor {
-  background: #3bae49;
+  background: #019939;
   color: white;
   /* height: 5%; */
   max-height: 169px;
