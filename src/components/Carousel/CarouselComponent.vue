@@ -87,7 +87,7 @@ export default {
   padding: 0 1%;
   background: #fff;
   height: 363px;
-  border-radius: 30px 0px;
+  border-radius: 24px 0px;
   box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ a:hover {
 img {
   height: 66%;
   width: 100%;
-  border-radius: 30px 0px;
+  border-radius: 24px 0px;
 }
 .carousel__viewport {
   perspective: 2000px;

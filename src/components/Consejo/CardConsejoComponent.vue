@@ -44,6 +44,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   align-self: center;
   margin: auto;
   /* background: red; */
@@ -51,6 +52,7 @@ export default {
 .logo {
   min-height: 90px;
   min-width: 326px;
+  margin-bottom: 4%;
   /* margin-left: 6%; */
   /* margin-top: -1rem; */
 }

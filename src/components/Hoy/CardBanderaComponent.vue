@@ -2,11 +2,11 @@
   <div class="contenedor">
     <div class="img">
       <img src="@/../public/images/bandera.png" alt="" class="banderaweb" />
-      <!-- <img
+      <img
         src="@/../public/images/banderaMobile.png"
         alt=""
         class="banderamobile"
-      /> -->
+      />
     </div>
     <div class="text">
       <h4>

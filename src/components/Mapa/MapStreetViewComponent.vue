@@ -31,11 +31,10 @@ export default {
     return {
       lugares: [
         { titulo: "POLICÍA" },
-        { titulo: "BOMBEROS" },
         { titulo: "DISPENSARIO" },
-        { titulo: "GOMERIA" },
         { titulo: "CLUB DE DEPORTE" },
         { titulo: "ESTACIÓN DE SERVICIO" },
+        { titulo: "GOMERIA" },
       ],
     };
   },
@@ -64,7 +63,8 @@ h5 {
   height: 80%;
   width: 100%;
   border-radius: 0px 120px 0px 0px;
-  padding: 4rem 6rem;
+  padding: 4rem 4rem;
+  padding-bottom: 5rem;
   margin-top: 4%;
 }
 .sugerencias {

@@ -239,12 +239,7 @@ h5 {
 }
 .masGestiones {
   border-radius: 40px;
-  background: linear-gradient(
-    90deg,
-    #019939 0.18%,
-    #ffcc03 52.79%,
-    #e52320 107.64%
-  );
+  background: #019939;
   min-height: 54px;
   width: 26%;
   margin: auto;

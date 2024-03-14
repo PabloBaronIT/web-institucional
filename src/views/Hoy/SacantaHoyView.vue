@@ -5,7 +5,6 @@
       <h5>SACANTA HOY</h5>
       <div class="derecho"></div>
     </div>
-    <MapaComponent />
     <CardBanderaComponent />
     <div class="contenedor-tar">
       <div class="tarjetas habitantes">
@@ -37,6 +36,8 @@
         <h3>Instituciones Educativas</h3>
       </div>
     </div>
+    <MapaComponent />
+
     <div class="volver">
       <div style="display: flex; flex-direction: row">
         <router-link to="/pueblo/historia">
@@ -128,6 +129,7 @@ export default {
 .linea h5 {
   font-weight: 600;
   color: #4b4a49;
+  font-size: 22px;
 }
 
 .izquierdo {
@@ -198,7 +200,7 @@ export default {
   width: 100%;
   align-items: flex-start;
   background: #eae9e9;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
   padding: 3% 2%;
 }
 .comercio {

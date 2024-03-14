@@ -19,7 +19,7 @@
     <!-- mapa de zona de sacanta enbebido -->
     <iframe
       height="450"
-      style="border: 0; width: 100%"
+      style="border: 0; width: 75%; margin: auto"
       loading="lazy"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
@@ -59,6 +59,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 5%;
 }
 .mapa {
   width: 100%;

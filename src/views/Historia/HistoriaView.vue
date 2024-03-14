@@ -63,6 +63,7 @@ export default {
 .linea h5 {
   font-weight: 600;
   color: #4b4a49;
+  font-size: 22px;
 }
 
 .izquierdo {

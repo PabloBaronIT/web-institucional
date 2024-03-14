@@ -5,6 +5,24 @@
       <h5>FIESTA NACIONAL</h5>
       <div class="derecho"></div>
     </div>
+    <div class="medio">
+      <FiestaComponent
+        Titulo="Fiesta Nacional de la familia Piamontesa"
+        Fecha="16-17 DE FEBRERO"
+        :Posicion="true"
+      />
+      <FiestaComponent
+        Titulo="Fiesta en honor al Santo Patrono San Ignacio de Loyola"
+        Fecha="31 DE JULIO"
+        :Posicion="false"
+      />
+      <FiestaComponent
+        Titulo="Fiesta del Reencuentro"
+        Fecha="11 DE NOVIEMBRE"
+        :Posicion="true"
+      />
+    </div>
+
     <div class="volver">
       <div style="display: flex; flex-direction: row">
         <router-link to="/pueblo/descubri-sacanta">
@@ -22,10 +40,15 @@
   </div>
 </template>
 <script>
+import FiestaComponent from "./../../components/Fiesta/FiestaComponent";
+
 export default {
   name: "FiestaView",
   created() {
     window.scrollTo(0, 0);
+  },
+  components: {
+    FiestaComponent,
   },
 };
 </script>
@@ -35,6 +58,10 @@ export default {
   padding-top: 10%;
   position: relative;
   padding-bottom: 12%;
+}
+.medio {
+  margin-top: 3%;
+  /* margin-bottom: 3%; */
 }
 .linea {
   display: flex;
@@ -49,6 +76,7 @@ export default {
 .linea h5 {
   font-weight: 600;
   color: #4b4a49;
+  font-size: 22px;
 }
 
 .izquierdo {
