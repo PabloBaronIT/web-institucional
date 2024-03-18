@@ -214,9 +214,9 @@ h5 {
 .card-body {
   background: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
+  justify-content: left;
+  align-items: center;
   border-radius: 16px;
   height: 100%;
   width: 100%;
@@ -226,10 +226,13 @@ h5 {
 
   /* width: 100%; */
 }
+.card-body h5 {
+  margin-left: 4%;
+}
 .card-body img {
   max-width: 44px;
   min-height: 30px;
-  margin-right: 3%;
+  /* margin-right: 5%; */
 }
 .cardGestiones:hover {
   background: linear-gradient(#019939 4.26%, #ffcc03 126.04%);

@@ -176,15 +176,15 @@ export default {
   border-radius: 20px;
   background: linear-gradient(90deg, #ffcc03 -19.15%, #eb491a 99.74%);
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
   /* align-content: center; */
   color: white;
-  /* padding-top: 2rem; */
+  padding-top: 1%;
 }
 .tarjetas-h1 {
   font-weight: 900;
   font-size: 80px;
-  margin-top: -5%;
+  margin-top: -6%;
 }
 .hUno {
   font-weight: 900;
@@ -239,6 +239,9 @@ export default {
   margin-left: 1vw;
   margin-right: 1vw;
 }
+.hecta {
+  display: none;
+}
 @media (max-width: 500px) {
   .hoy-container {
     padding-top: 5%;
@@ -288,7 +291,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 2% 4%; */
+    padding: 0;
   }
   .tarjetas h3 {
     font-size: 8px;
